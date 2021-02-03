@@ -7,6 +7,8 @@
 --basic-pale-grey: #EEEEEE;
 --basic-dark-grey: #888888;
 --basic-light-grey: #D7DCDE;
+--basic-low-opacity: rgba(0, 0, 0, 0.3);
+--basic-red-opacity: rgba(255, 255, 255, 0.3);
 
 --special-1: #FB565A;
 --special-2: #E74246;
@@ -22,7 +24,6 @@
 }
 
 body {
-  min-width: 960px; /*Не знаю, нужно ли это?*/
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -31,9 +32,9 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   text-transform: none;
-   }
+}
 
- a {
+a {
   text-decoration: none;
 }
 
@@ -43,25 +44,20 @@ img {
 }
 
 .main-navigation {
-  font-size: 16px;
-  line-height: 30px;
   color: var(--basic-black);
   background-color: var(--basic-pale-grey);
 }
 
-.main-navigation-wrapper {
+.main-wrapper {
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
   list-style: none;
 }
 
 .main-header-logo {
-  background-color: var(--basic-pale-grey);
-}
-
-.main-header-logo img:active {
-background-image: url("img/nerds-logo2.svg"); /*Не знаю как заменить изображение*/
-}
-
-.main-navigation-wrapper-current a:not([href]) { /*current a:not([href] - не понимаю что это означает*/
   background-color: var(--basic-pale-grey);
 }
 
@@ -70,16 +66,16 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
 
 }
 
-.main-navigation-wrapper a:hover {
+.main-wrapper a:hover {
   color: var(--special-1);
 }
 
-.main-navigation-wrapper a:active {
-  opacity: 0.3;
+.main-wrapper a:active {
+  color: var(--basic-low-opacity);
 }
 
-.main-navigation-wrapper a:focus {
-  color: var(--basic-black); /*Не знаю как сделать красное подчеркивание*/
+.main-wrapper a:focus {
+  color: var(--basic-black);
 }
 
 .heading {
@@ -91,13 +87,15 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
   list-style: none;
 }
 
-.subtitle {
+.features-subtitle {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
-.text {
+.features-text,
+.services-text,
+.about-text {
   color: var(--basic-grey-blue);
 }
 
@@ -117,8 +115,8 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
 }
 
 .button:active {
+  color: var(--basic-red-opacity);
   background-color: var(--special-5);
-  opacity: 0.3; /*Задает прозрачность всей кнопке, а не тексту*/
 }
 
 .button-green {
@@ -134,7 +132,7 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
 
 .button-green:active {
   background-color: var(--special-7);
-  opacity: 0.3; /*Задает прозрачность всей кнопке, а не тексту*/
+  color: var(--basic-red-opacity);
 }
 
 .button-yellow {
@@ -150,10 +148,10 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
 
 .button-yellow:active {
   background-color: var(--special-9);
-  opacity: 0.3; /*Задает прозрачность всей кнопке, а не тексту*/
+  color:var(--basic-red-opacity);
 }
 
-.subject {
+.services-subject {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -163,20 +161,19 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
   color: var(--basic-black);
 }
 
-.headline {
+.about-headline {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 
-.caption {
+.about-caption {
   font-weight: 700;
   color: var(--basic-grey-blue);
 }
 
 .about-item {
   color: var(--basic-grey-blue);
-  /*нужно задать элемент списка (красные полоски)*/
 }
 
 .slogan {
@@ -185,7 +182,7 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
   text-align: center;
 }
 
-.number {
+.term {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
@@ -197,7 +194,7 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
   line-height: 40px;
 }
 
-.note {
+.definition {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey-blue);
@@ -216,12 +213,16 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
   opacity: 0.1;
 }
 
-
-.name {
+.contacts-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   align-items: center;
+}
+
+.contacts-address,
+.contacts-phone {
+  color: var(--basic-grey);
 }
 
 .contacts-button {
@@ -230,35 +231,68 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
   align-items: center;
   color: var(--basic-white);
   background-color: var(--special-1);
+  border-style: none;
+  border-radius: 3px;
 }
 
-.connection {
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: var(--special-2);
+}
+
+.contacts-button:active {
+  color: var(--basic-red-opacity);
+  background-color: var(--special-5);
+}
+
+.modal-connection {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
 }
- .appointment-name,
- .appointment-email,
- .appointment-message {
+
+.modal-name,
+.modal-email,
+.modal-message {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  }
+}
 
-.appointment-field {
+.modal-field {
   color: var(--basic-del);
   font-size: 16px;
   line-height: 18px;
   border: 2px solid var(--basic-light-grey);
-  border-radius: 3px
+  border-radius: 3px;
 }
 
-.appointment-field:hover {
+.modal-field:hover {
   border: 2px solid var(--special-11);
 }
 
-.appointment-field:focus {
+.modal-field:focus {
   border: 2px solid var(--basic-black);
+}
+
+.button-send {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-white);
+  background-color: var(--special-1);
+  border-style: none;
+  border-radius: 3px;
+}
+
+.button-send:hover,
+.button-send:focus {
+  background-color: var(--special-2);
+}
+
+.button-send:active {
+  color: var(--basic-red-opacity);
+  background-color: var(--special-5);
 }
 
 .footer-slogan {
@@ -267,7 +301,8 @@ background-image: url("img/nerds-logo2.svg"); /*Не знаю как замен�
   line-height: 36px;
 }
 
-.discount {
+.footer-discount {
   font-size: 16px;
   line-height: 22px;
+  color:var(--basic-del);
 }
