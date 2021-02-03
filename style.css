@@ -1,0 +1,273 @@
+:root {
+--basic-black: #000000;
+--basic-grey-blue: #283136;
+--basic-white: #FFFFFF;
+--basic-grey: #666666;
+--basic-del: #444444;
+--basic-pale-grey: #EEEEEE;
+--basic-dark-grey: #888888;
+--basic-light-grey: #D7DCDE;
+
+--special-1: #FB565A;
+--special-2: #E74246;
+--special-3: #00CA74;
+--special-4: #EFC849;
+--special-5: #D7373B;
+--special-6: #00BC6C;
+--special-7: #00AA62;
+--special-8: #EAB534;
+--special-9: #E5A722;
+--special-10: #A6A6A6;
+--special-11: #B4B9BB;
+}
+
+body {
+  min-width: 960px; /*Не знаю, нужно ли это?*/
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: none;
+   }
+
+ a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-pale-grey);
+}
+
+.main-navigation-wrapper {
+  list-style: none;
+}
+
+.main-header-logo {
+  background-color: var(--basic-pale-grey);
+}
+
+.main-header-logo img:active {
+background-image: url("img/nerds-logo2.svg"); /*Не знаю как заменить изображение*/
+}
+
+.main-navigation-wrapper-current a:not([href]) { /*current a:not([href] - не понимаю что это означает*/
+  background-color: var(--basic-pale-grey);
+}
+
+.main-navigation a {
+  color: var(--basic-black);
+
+}
+
+.main-navigation-wrapper a:hover {
+  color: var(--special-1);
+}
+
+.main-navigation-wrapper a:active {
+  opacity: 0.3;
+}
+
+.main-navigation-wrapper a:focus {
+  color: var(--basic-black); /*Не знаю как сделать красное подчеркивание*/
+}
+
+.heading {
+  background-color: var(--basic-pale-grey);
+}
+
+.features-list {
+  background-color: var(--basic-pale-grey);
+  list-style: none;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.text {
+  color: var(--basic-grey-blue);
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-white);
+  background-color: var(--special-1);
+  border-radius: 3px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--special-2);
+}
+
+.button:active {
+  background-color: var(--special-5);
+  opacity: 0.3; /*Задает прозрачность всей кнопке, а не тексту*/
+}
+
+.button-green {
+  color: var(--basic-white);
+  background-color: var(--special-3);
+  border-radius: 3px;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--special-6);
+}
+
+.button-green:active {
+  background-color: var(--special-7);
+  opacity: 0.3; /*Задает прозрачность всей кнопке, а не тексту*/
+}
+
+.button-yellow {
+  color: var(--basic-white);
+  background-color: var(--special-4);
+  border-radius: 3px;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--special-8);
+}
+
+.button-yellow:active {
+  background-color: var(--special-9);
+  opacity: 0.3; /*Задает прозрачность всей кнопке, а не тексту*/
+}
+
+.subject {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about {
+  color: var(--basic-black);
+}
+
+.headline {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.caption {
+  font-weight: 700;
+  color: var(--basic-grey-blue);
+}
+
+.about-item {
+  color: var(--basic-grey-blue);
+  /*нужно задать элемент списка (красные полоски)*/
+}
+
+.slogan {
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.interest {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.note {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey-blue);
+}
+
+.companies-item {
+  list-style: none;
+  opacity: 0.2;
+}
+
+.companies-item:hover {
+  opacity: 1;
+}
+
+.companies-item:active {
+  opacity: 0.1;
+}
+
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.contacts-button {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-white);
+  background-color: var(--special-1);
+}
+
+.connection {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+ .appointment-name,
+ .appointment-email,
+ .appointment-message {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  }
+
+.appointment-field {
+  color: var(--basic-del);
+  font-size: 16px;
+  line-height: 18px;
+  border: 2px solid var(--basic-light-grey);
+  border-radius: 3px
+}
+
+.appointment-field:hover {
+  border: 2px solid var(--special-11);
+}
+
+.appointment-field:focus {
+  border: 2px solid var(--basic-black);
+}
+
+.footer-slogan {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.discount {
+  font-size: 16px;
+  line-height: 22px;
+}
