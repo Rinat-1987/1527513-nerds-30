@@ -48,8 +48,7 @@ img {
   background-color: var(--basic-pale-grey);
 }
 
-.main-wrapper,
-.basket {
+.main-wrapper {
   align-items: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -62,21 +61,21 @@ img {
   background-color: var(--basic-pale-grey);
 }
 
-.main-navigation a,
-.basket a {
+.main-navigation a {
   color: var(--basic-black);
+
 }
 
-.main-wrapper a:hover,
-.basket a:hover,
-.main-wrapper a:focus,
-.basket a:focus {
+.main-wrapper a:hover {
   color: var(--special-1);
 }
 
-.main-wrapper a:active,
-.basket a:active {
+.main-wrapper a:active {
   color: var(--basic-low-opacity);
+}
+
+.main-wrapper a:focus {
+  color: var(--basic-black);
 }
 
 .heading {
@@ -108,7 +107,6 @@ img {
   color: var(--basic-white);
   background-color: var(--special-1);
   border-radius: 3px;
-  border-style: none;
 }
 
 .button:hover,
@@ -122,10 +120,6 @@ img {
 }
 
 .button-green {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  align-items: center;
   color: var(--basic-white);
   background-color: var(--special-3);
   border-radius: 3px;
@@ -142,10 +136,6 @@ img {
 }
 
 .button-yellow {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  align-items: center;
   color: var(--basic-white);
   background-color: var(--special-4);
   border-radius: 3px;
@@ -186,25 +176,25 @@ img {
   color: var(--basic-grey-blue);
 }
 
-.about-slogan {
+.slogan {
   font-weight: 700;
   align-items: center;
   text-align: center;
 }
 
-.about-term {
+.term {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
 }
 
-.about-interest {
+.interest {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
 }
 
-.about-definition {
+.definition {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey-blue);
@@ -235,13 +225,35 @@ img {
   color: var(--basic-grey);
 }
 
-.modal-title {
+.contacts-button {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-white);
+  background-color: var(--special-1);
+  border-style: none;
+  border-radius: 3px;
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: var(--special-2);
+}
+
+.contacts-button:active {
+  color: var(--basic-red-opacity);
+  background-color: var(--special-5);
+}
+
+.modal-connection {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
 }
 
-.modal-label {
+.modal-name,
+.modal-email,
+.modal-message {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -261,6 +273,26 @@ img {
 
 .modal-field:focus {
   border: 2px solid var(--basic-black);
+}
+
+.button-send {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-white);
+  background-color: var(--special-1);
+  border-style: none;
+  border-radius: 3px;
+}
+
+.button-send:hover,
+.button-send:focus {
+  background-color: var(--special-2);
+}
+
+.button-send:active {
+  color: var(--basic-red-opacity);
+  background-color: var(--special-5);
 }
 
 .footer-slogan {
