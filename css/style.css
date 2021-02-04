@@ -21,6 +21,8 @@
 --special-9: #E5A722;
 --special-10: #A6A6A6;
 --special-11: #B4B9BB;
+--special-12: #DFDFDF;
+--special-13: #D5D5D5;
 }
 
 body {
@@ -263,4 +265,55 @@ img {
   font-size: 16px;
   line-height: 22px;
   color:var(--basic-del);
+}
+
+.title2 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  align-items: center;
+}
+
+.filter-subject2,
+.variants-subject2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.filter-adaptiv,
+.filter-fix,
+.filter-gum,
+.variants-slayder,
+.variants-advantage,
+.variants-news,
+.variants-gallery,
+.variants-basket {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--basic-grey-blue);
+}
+
+.filter-list,
+.variants-list {
+  list-style: none;
+}
+
+.button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  background-color: var(--basic-pale-grey);
+}
+
+.button-filter:hover {
+  background-color: var(--special-12);
+}
+
+.button-filter:active {
+  background-color: var(--special-13);
 }
