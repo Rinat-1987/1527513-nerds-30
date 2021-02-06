@@ -49,8 +49,8 @@
               <legend class="filter-subject2">СЕТКА:</legend>
               <ul class="filter-list">
                 <li>
-                  <input type="radio" name="grid" value="adaptiv" id="adaptiv" checked>
-                  <label for="filter-adaptiv">Адаптивная</label>
+                  <input type="radio" name="grid" value="adaptiv" id="adaptiv" checked><!--Не знаю как сделать значки радиокнопок и чекбоксов прозрачными-->
+                  <label for="filter-adaptiv">Адаптивная</label><!--Не знаю как задать состояние "Заблокирован"-->
                 </li>
                 <li>
                   <input type="radio" name="grid" value="fix" id="fix">
@@ -94,96 +94,113 @@
         </section>
 
         <section>
-          <h2>СОРТИРОВАТЬ:</h2>
-          <ul>
-            <li><a href="">ПО ЦЕНЕ</a><li>
-            <li><a href="">ПО ТИПУ</a></li>
-            <li><a href="">ПО НАЗВАНИЮ</a></li>
+          <h2 class="heading2">СОРТИРОВАТЬ:</h2>
+          <ul class="heading2-list">
+            <li class="heading2-item">
+              <a href="">ПО ЦЕНЕ</a>
+            <li>
+            <li class="heading2-item">
+              <a href="">ПО ТИПУ</a>
+            </li>
+            <li class="heading2-item">
+              <a href="">ПО НАЗВАНИЮ</a>
+            </li>
           </ul>
           <ul>
-            <li><a href="">сортировка по убыванию</a><!--треугольник--></li>
-            <li><a href="">сортировка по возрастанию</a><!--треугольник--></li>
+            <li>
+              <a href="">сортировка по убыванию</a><!--треугольник-->
+            </li>
+            <li>
+              <a href="">сортировка по возрастанию</a><!--треугольник-->
+            </li>
           </ul>
         </section>
 
-        <section>
+        <section class="portfolio">
           <h2>Варианты шаблонов</h2>
-          <ul>
+          <ul class="portfolio-list">
             <li>
               <img src="img/img-sedona.jpg" width="358" height="578" alt="Сайт Седона">
-              <h3><a href="">SEDONA</a></h3>
-                <p>Информационный сайт для туристов</p>
-                <a href="">9 900Р</a>
+              <h3 class="portfolio-subtitle"><a href="">SEDONA</a></h3><!--Не знаю как вызвать попап. Ссылка в состоянии покоя фиолетовая, а не черная-->
+                <p class="portfolio-description">Информационный сайт для туристов</p>
+                <a class="portfolio-button" href="">9 900Р</a>
             </li>
             <li>
               <img src="img/img-pink.jpg" width="358" height="578" alt="Сайт PINK APP">
-              <h3><a href="">PINK APP</a></h3>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a href="">9 900Р</a>
+              <h3 class="portfolio-subtitle"><a href="">PINK APP</a></h3>
+                <p class="portfolio-description">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="portfolio-button" href="">9 900Р</a>
             </li>
             <li>
               <img src="img/img-barbershop.jpg" width="358" height="578" alt="Сайт BARBERSHOP">
-              <h3><a href="">BARBERSHOP</a></h3>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
-                <a href="">9 900Р</a>>
+              <h3 class="portfolio-subtitle"><a href="">BARBERSHOP</a></h3>
+                <p class="portfolio-description">Сайт салона красоты. Для мужчин, да.</p>
+                <a class="portfolio-button" href="">9 900Р</a>>
             </li>
             <li>
               <img src="img/img-mishka.jpg" width="358" height="578" alt="Сайт Интернет-магазина">
-              <h3><a href="">MISHKA</a></h3>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a href="">9 900Р</a>
+              <h3 class="portfolio-subtitle"><a href="">MISHKA</a></h3>
+                <p class="portfolio-description">Интернет-магазин вязаных игрушек</p>
+                <a class="portfolio-button" href="">9 900Р</a>
             </li>
             <li>
               <img src="img/img-a.jpg" width="358" height="578" alt="Лендинг курсов">
-              <h3><a href="">A PLUS</a></h3>
-                <p>Лендинг курсов повышения квалификации</p>
-                <a href="">9 900Р</a>
+              <h3 class="portfolio-subtitle"><a href="">A PLUS</a></h3>
+                <p class="portfolio-description">Лендинг курсов повышения квалификации</p>
+                <a class="portfolio-button" href="">9 900Р</a>
             </li>
             <li>
               <img src="img/img-kraft.jpg" width="358" height="578" alt="Сайт пенных напитков">
               <h3><a href="">КВАСТ</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a href="">9 900Р</a>
+                <a class="portfolio-button" href="">9 900Р</a>
             </li>
           </ul>
 
-          <ul>
-            <li><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
+          <ul class="pages">
+            <li class="pages-item">
+              <a>1</a>
+            </li>
+            <li class="pages-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pages-item">
+              <a href="#">3</a>
+            </li>
           </ul>
-          <button type="submit">СЛЕДУЮЩАЯ</button>
+          <button class="button-pages" type="submit">СЛЕДУЮЩАЯ</button>
         </section>
 
         <div>
           <img src="img/map.jpg" width="1440" height="416" alt="Карта">
         </div>
-
-        <div>
-          <p>NЁRDS DESIGN STUDIO191186</p>
-          <p>Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p><a href="tel:+78122757575"> тел. +7 (812) 275-75-75 </a>
-          <button type="submit">НАПИШИТЕ НАМ</button>
+        <div class="contacts">
+          <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
+          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
+          <a class="contacts-phone" href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
+          <button class="contacts-button button" type="submit">НАПИШИТЕ НАМ</button>
         </div>
       </main>
 
-      <footer>
-        <section>
+      <footer class="main-footer">
+
+        <section class="footer-social">
           <h2>Соцсети</h2>
-          <ul>
+          <ul class="footer-social-list">
             <li>
-              <a><img src="img/vk-icon.svg" width="26.01" height="15" alt="Вконтакте"></a>
+              <a class="social-button"><img src="img/vk-icon.svg" width="26.01" height="15" alt="Вконтакте"></a>
             </li>
             <li>
-              <a><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+              <a class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
             </li>
             <li>
-              <a><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм"></a>
+              <a class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм"></a>
             </li>
           </ul>
         </section>
 
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+        <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
       </footer>
   </body>
 </html>

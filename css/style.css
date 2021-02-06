@@ -9,6 +9,8 @@
 --basic-light-grey: #D7DCDE;
 --basic-low-opacity: rgba(0, 0, 0, 0.3);
 --basic-red-opacity: rgba(255, 255, 255, 0.3);
+--basic-black-opacity: rgba(0, 0, 0, 0.6);
+--basic-white-opacity: rgba(0, 0, 0, 0.0001);
 
 --special-1: #FB565A;
 --special-2: #E74246;
@@ -274,6 +276,8 @@ img {
   align-items: center;
 }
 
+.subject2,
+.heading2,
 .filter-subject2,
 .variants-subject2 {
   font-weight: bold;
@@ -297,7 +301,10 @@ img {
 }
 
 .filter-list,
-.variants-list {
+.variants-list,
+.heading2-list,
+.pages,
+.footer-social-list {
   list-style: none;
 }
 
@@ -316,4 +323,102 @@ img {
 
 .button-filter:active {
   background-color: var(--special-13);
+}
+
+.heading2-item a {
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-low-opacity);
+}
+
+.heading2-item a:hover {
+  color: var(--basic-black-opacity);
+}
+
+.heading2-item a:active {
+  color: var(--basic-black);
+}
+
+.portfolio-subtitle a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.portfolio-subtitle a:hover {
+  color: var(--special-1);
+}
+
+.portfolio-subtitle a:active {
+  color: var(--basic-low-opacity);
+}
+
+.portfolio-description {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: var(--basic-grey);
+}
+
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  color: var(--basic-white);
+  background-color: var(--special-1);
+  border-radius: 3px;
+  border-style: none;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--special-2);
+}
+
+.portfolio-button:active {
+  background-color: var(--special-5);
+}
+
+.pages-item {
+  background-color: var(--basic-pale-grey);
+  border-radius: 3px;
+}
+
+.pages-item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.pages-item a:hover {
+  background-color: var(--special-12);
+}
+
+.pages-item a:active {
+  background-color: var(--special-13);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--basic-low-opacity);
+}
+
+.pages-item a:focus { /*Не знаю как сделать актиынй пункт*/
+  background-color: var(--basic-white-opacity);
+  border: 3px solid #DBDBDB;
+  box-sizing: border-box;
+}
+
+.button-pages {
+  color: var(--basic-black);
+  background-color: var(--basic-pale-grey);
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
