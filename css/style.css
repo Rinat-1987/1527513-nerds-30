@@ -269,17 +269,17 @@ img {
   color:var(--basic-del);
 }
 
-.title2 {
+.catalog-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   align-items: center;
 }
 
-.subject2,
-.heading2,
-.filter-subject2,
-.variants-subject2 {
+.catalog-subject,
+.sorting-title,
+.filter-grid-legend,
+.filter-variants-legend {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -300,11 +300,12 @@ img {
   color: var(--basic-grey-blue);
 }
 
-.filter-list,
-.variants-list,
-.heading2-list,
-.pages,
-.footer-social-list {
+.filter-grid-list,
+.filter-variants-list,
+.sorting-list,
+.pagination,
+.footer-social-list,
+.catalog-list {
   list-style: none;
 }
 
@@ -325,7 +326,7 @@ img {
   background-color: var(--special-13);
 }
 
-.heading2-item a {
+.sorting-item a {
   font-size: 14px;
   line-height: 18px;
   align-items: center;
@@ -333,29 +334,33 @@ img {
   color: var(--basic-low-opacity);
 }
 
-.heading2-item a:hover {
+.sorting-item a:hover {
   color: var(--basic-black-opacity);
 }
 
-.heading2-item a:active {
+.sorting-item a:active {
   color: var(--basic-black);
 }
 
-.portfolio-subtitle a {
+.sorting-active {
+ color: var(--basic-black);
+}
+
+.catalog-subtitle a {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 }
 
-.portfolio-subtitle a:hover {
+.catalog-subtitle a:hover {
   color: var(--special-1);
 }
 
-.portfolio-subtitle a:active {
+.catalog-subtitle a:active {
   color: var(--basic-low-opacity);
 }
 
-.portfolio-description {
+.catalog-description {
   font-size: 16px;
   line-height: 18px;
   align-items: center;
@@ -363,7 +368,7 @@ img {
   color: var(--basic-grey);
 }
 
-.portfolio-button {
+.catalog-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -374,44 +379,45 @@ img {
   border-style: none;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.catalog-button:hover,
+.catalog-button:focus {
   background-color: var(--special-2);
 }
 
-.portfolio-button:active {
+.catalog-button:active {
   background-color: var(--special-5);
 }
 
-.pages-item {
+.pagination-item {
   background-color: var(--basic-pale-grey);
   border-radius: 3px;
 }
 
-.pages-item a {
+.pagination-item a {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
 }
 
-.pages-item a:hover {
+.pagination-item a:hover {
   background-color: var(--special-12);
 }
 
-.pages-item a:active {
+.pagination-item a:active {
   background-color: var(--special-13);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: var(--basic-low-opacity);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.pages-item a:focus { /*Не знаю как сделать актиынй пункт*/
+.pagination-active a {
   background-color: var(--basic-white-opacity);
   border: 3px solid #DBDBDB;
   box-sizing: border-box;
+  color: var(--basic-black);
 }
 
-.button-pages {
+.button-pagination {
   color: var(--basic-black);
   background-color: var(--basic-pale-grey);
   border-radius: 3px;
@@ -421,4 +427,14 @@ img {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.button-pagination:hover {
+  background-color: var(--special-12);
+}
+
+.button-pagination:active {
+  background-color: var(--special-13);
+  color: var(--basic-low-opacity);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
