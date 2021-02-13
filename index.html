@@ -15,27 +15,27 @@
 
       <nav class="main-navigation">
         <a class="main-header-logo"><img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип Нёрдс"></a>
-      <ul class="main-wrapper">
-        <li>
-          <a href="#">Студия</a>
-        </li>
-        <li>
-          <a href="#">Клиенты</a>
-        </li>
-        <li>
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <div class="basket">
-        <a href="#">Корзина</a>
-      </div>
+        <ul class="main-wrapper">
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="basket">
+          <a href="#">Корзина</a>
+        </div>
       </nav>
-      </header>
+    </header>
 
-      <main>
+     <main class="container">
         <h1 class="heading">Интернет магазин «Nerds»</h1>
         <ul class="features-list">
           <li class="features-item">
@@ -65,7 +65,7 @@
             </li>
             <li class="services-item">
               <h3 class="services-subject">ПРИЛОЖЕНИЯ</h3>
-              <p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <p class="services-text">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
               <a class="services-button button button-green" href="#">ЗАКАЗАТЬ</a>
             </li>
             <li class="services-item">
@@ -77,43 +77,47 @@
         </section>
 
         <section class="about">
-          <h2>О нас</h2>
-          <p class="about-headline">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="about-caption">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+          <div>
+            <h2>О нас</h2>
+            <p class="about-headline">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="about-caption">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
             <ul class="about-list">
-              <li class="about-item">
-                Веб-сайтов любой сложности
+              <li class="about-item"> <!--Непонятно как высчитать расстояние между лишками-->
+                  Веб-сайтов любой сложности
               </li>
               <li class="about-item">
-                Мобильных приложений для iOS и Android
+                  Мобильных приложений для iOS и Android
               </li>
               <li class="about-item">
-                Слайдшоу и видео для корпоративных презентаций
+                  Слайдшоу и видео для корпоративных презентаций
               </li>
             </ul>
-          <img src="img/page6.png" width="360" height="208" alt="Разноцветный логотип Нёрдс">
-          <p class="about-slogan">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-            <dl>
-              <dt class="about-term">146<sup class="about-interest">%</sup></dt><dd class="about-definition">Уровень самоотдачи</dd>
-              <dt class="about-term">100<sup class="about-interest">%</sup></dt><dd class="about-definition">Соблюдение сроков</dd>
-              <dt class="about-term">50<sup class="about-interest">%</sup></dt><dd class="about-definition">Минимальная предоплата</dd>
-            </dl>
+          </div>
+          <div>
+            <img src="img/page6.png" width="360" height="208" alt="Разноцветный логотип Нёрдс">
+            <p class="about-slogan">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+              <dl class="about-items">
+                <dt class="about-term">146<sup class="about-interest">%</sup></dt><dd class="about-definition">Уровень самоотдачи</dd>
+                <dt class="about-term">100<sup class="about-interest">%</sup></dt><dd class="about-definition">Соблюдение сроков</dd>
+                <dt class="about-term">50<sup class="about-interest">%</sup></dt><dd class="about-definition">Минимальная предоплата</dd>
+              </dl>
+          </div>
         </section>
 
         <section class="companies">
           <h2>Шаблоны</h2>
-          <ul class="companies-list">
-            <li class="companies-item">
+          <ul class="companies-list"> <!--Не знаю как отцентровать, логотипы стоят неровно-->
+            <li class="companies-item companies-html">
               <a><img src="img/logo-html.png" width="199" height="67.82" alt="html academy"></a>
             </li>
-            <li class="companies-item">
+            <li class="companies-item companies-borodinski">
               <a><img src="img/logo-borodinski.png" width="209" height="90" alt="borodinski"></a>
             </li>
-            <li class="companies-item">
+            <li class="companies-item companies-pink">
               <a><img src="img/logo-pink.png" width="185" height="52" alt="pink"></a>
             </li>
-            <li class="companies-item">
+            <li class="companies-item companies-mishka">
               <a><img src="img/logo-mishka.png" width="173" height="84" alt="mishka"></a>
             </li>
           </ul>
@@ -134,7 +138,7 @@
           <form class="modal-form" action="#" method="post">
             <label class="modal-label">
               Ваше имя: <input class="modal-field" type="text" name="uzer" placeholder="Имя Фамилия">
-            </label><!--Не знаю как задать невалидное значение-->
+            </label>
             <label class="modal-label">
               Ваш email: <input class="modal-field" type="text" name="email" placeholder="email@example.com">
             </label>
