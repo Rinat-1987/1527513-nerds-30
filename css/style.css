@@ -39,7 +39,6 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
-    align-content: start;
   }
 
   a {
@@ -168,7 +167,7 @@
   .container {
     width: 1160px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0;
   }
 
   .services-list {
@@ -430,6 +429,53 @@
     font-size: 55px;
     line-height: 55px;
     align-items: center;
+    width: 100%;
+    background-color: var(--basic-pale-grey);
+    padding: 85px 10px 115px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .shop {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr;
+    height: 1900px;
+  }
+
+  .filter {
+    grid-row: 1 / 5;
+    grid-column: 1 / 2;
+  }
+
+  .sorting {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    height: 75px;
+    width: 760px;
+    margin-left: 140px;
+    display: flex;
+  }
+
+  .sorting-title {
+    margin-right: 260px;
+  }
+
+  .sorting-list {
+    display: flex;
+  }
+
+  .catalog {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+    margin-left: 140px;
+  }
+
+  .catalog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px;
   }
 
   .catalog-subject,
@@ -459,7 +505,7 @@
   .filter-grid-list,
   .filter-variants-list,
   .sorting-list,
-  .pagination,
+  .pagination-list,
   .footer-social-list,
   .catalog-list {
     list-style: none;
@@ -544,8 +590,21 @@
     background-color: var(--special-5);
   }
 
+  .pagination {
+    margin-top: 450px; /*Это временно,тк у шаблонов скроется описание*/
+    display: grid;
+    grid-template-columns: min-content min-content;
+  }
+
+  .pagination-list {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-gap: 11px;
+    margin-left: 400px;
+    margin-bottom: 60px;
+  }
+
   .pagination-item {
-    background-color: var(--basic-pale-grey);
     border-radius: 3px;
   }
 
@@ -553,7 +612,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    text-align: center;
+    padding: 17px 20px 15px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--basic-pale-grey);
   }
 
   .pagination-item a:hover {
@@ -568,21 +630,22 @@
 
   .pagination-active a {
     background-color: var(--basic-white-opacity);
-    border: 3px solid #DBDBDB;
+    outline: 3px solid #DBDBDB;
+    outline-offset: -3px;
     box-sizing: border-box;
     color: var(--basic-black);
   }
 
-  .button-pagination {
+  .button-pagination { /*Не знаю как убрать черную рамку*/
     color: var(--basic-black);
     background-color: var(--basic-pale-grey);
-    border-radius: 3px;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+    margin-left: 11px;
+    width: 260px;
+    height: 50px;
+    padding: 17px 77px 15px 78px;
   }
 
   .button-pagination:hover {
