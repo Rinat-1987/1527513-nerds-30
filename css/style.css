@@ -54,19 +54,23 @@
     height: 100%;
   }
 
+  .main-header {
+    background-color: var(--basic-pale-grey);
+    padding-top: 40px;
+  }
+
   .main-navigation {
-    display: grid;
-    grid-template-columns: max-content 1fr min-content;
-    width: 100%;
+    display: flex;
+    align-items: center;
     color: var(--basic-black);
     background-color: var(--basic-pale-grey);
-    margin: 0 auto;
     padding: 10px;
   }
 
   .main-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+    width: 437px;
     margin-left: 202.13px;
     margin-right: 285.84px;
   }
@@ -80,10 +84,6 @@
     font-weight: 500;
     list-style: none;
     text-align: center;
-  }
-
-  .basket {
-    padding: 10px;
   }
 
   .main-header-logo {
@@ -192,7 +192,7 @@
 
   .services-button {
     padding: 17px 40px 15px 39px;
-    margin-bottom: 80px; /*Не работает почему-то*/
+    margin-bottom: 80px;
   }
 
   .button-green {
@@ -230,7 +230,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 149px;
-    margin-top: 40px; /*Не работает верхний отступ почему-то*/
+    margin-top: 40px;
     margin-bottom: 70px;
     border-top: 2px solid #EEEEEE;
   }
@@ -262,6 +262,10 @@
   .about-item {
     color: var(--basic-grey-blue);
     margin-top: 30px;
+  }
+
+  .about-image {
+    margin-top: 39px;
   }
 
   .about-slogan {
@@ -337,12 +341,15 @@
   }
 
   .map {
-    margin: 80px;
+    margin-top: 80px;
+    padding: 0;
+    width: 100%;
   }
 
   .contacts {
     display: grid;
     grid-template-rows: repeat(4, min-content);
+    padding: 10px;
   }
 
   .contacts-name {
@@ -424,7 +431,7 @@
     flex-direction: column;
   }
 
-  .catalog-title {
+  .filter-title {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -434,6 +441,10 @@
     padding: 85px 10px 115px;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .catalog-subject {
+    margin-bottom: 235px;
   }
 
   .shop {
@@ -458,7 +469,7 @@
   }
 
   .sorting-title {
-    margin-right: 260px;
+    margin-right: 80px;
   }
 
   .sorting-list {
@@ -476,6 +487,15 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .filter-cost-grid,
+  .filter-grid-fieldset,
+  .filter-variants-fildset {
+    border: 0 none;
   }
 
   .catalog-subject,
@@ -502,6 +522,10 @@
     color: var(--basic-grey-blue);
   }
 
+  .filter li {
+    margin-top: 20px;
+  }
+
   .filter-grid-list,
   .filter-variants-list,
   .sorting-list,
@@ -511,6 +535,10 @@
     list-style: none;
   }
 
+  .filter-variants-fildset {
+    margin-top: 25px;
+  }
+
   .button-filter {
     font-weight: 500;
     font-size: 16px;
@@ -518,6 +546,11 @@
     align-items: center;
     text-align: center;
     background-color: var(--basic-pale-grey);
+    width: 260px;
+    height: 50px;
+    padding: 17px 89px 15px 88px;
+    border: none;
+    border-radius: 3px;
   }
 
   .button-filter:hover {
@@ -534,6 +567,7 @@
     align-items: center;
     text-transform: uppercase;
     color: var(--basic-low-opacity);
+    margin-left: 20px;
   }
 
   .sorting-item a:hover {
@@ -545,13 +579,23 @@
   }
 
   .sorting-active a {
-   color: var(--basic-black);
+    color: var(--basic-black);
+  }
+
+  .catalog-example {
+    display: grid;
+    grid-auto-rows: repeat(3, min-content);
+    width: 360px;
+    height: 231px;
+    background: var(--basic-pale-grey);
   }
 
   .catalog-subtitle a {
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    margin-top: 26px;
   }
 
   .catalog-subtitle a:hover {
@@ -565,20 +609,23 @@
   .catalog-description {
     font-size: 16px;
     line-height: 18px;
-    align-items: center;
-    text-align: center;
     color: var(--basic-grey);
+    margin: 0;
+    margin-top: 12px;
   }
 
   .catalog-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    align-items: center;
     color: var(--basic-white);
     background-color: var(--special-1);
     border-radius: 3px;
     border-style: none;
+    align-items: center;
+    text-align: center;
+    margin: 32px 80px 44px;
+    padding: 17px 72px 15px;
   }
 
   .catalog-button:hover,
@@ -591,7 +638,7 @@
   }
 
   .pagination {
-    margin-top: 450px; /*Это временно,тк у шаблонов скроется описание*/
+    margin-top: 800px; /*Это временно,тк у шаблонов скроется описание*/
     display: grid;
     grid-template-columns: min-content min-content;
   }
@@ -604,10 +651,6 @@
     margin-bottom: 60px;
   }
 
-  .pagination-item {
-    border-radius: 3px;
-  }
-
   .pagination-item a {
     font-weight: 500;
     font-size: 16px;
@@ -616,6 +659,7 @@
     width: 50px;
     height: 50px;
     background-color: var(--basic-pale-grey);
+    border-radius: 3px;
   }
 
   .pagination-item a:hover {
@@ -634,9 +678,10 @@
     outline-offset: -3px;
     box-sizing: border-box;
     color: var(--basic-black);
+    border-radius: 3px;
   }
 
-  .button-pagination { /*Не знаю как убрать черную рамку*/
+  .button-pagination {
     color: var(--basic-black);
     background-color: var(--basic-pale-grey);
     font-weight: 500;
@@ -646,6 +691,8 @@
     width: 260px;
     height: 50px;
     padding: 17px 77px 15px 78px;
+    border: none;
+    border-radius: 3px;
   }
 
   .button-pagination:hover {
@@ -656,4 +703,17 @@
     background-color: var(--special-13);
     color: var(--basic-low-opacity);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  }
+
+  .map
+
+  .controls {
+    height: 39px;
+    background-color: var(--basic-grey);
+    padding-top: 39px;
+  }
+
+  .scale {
+    height: 2px;
+    color: var(--special-6)
   }

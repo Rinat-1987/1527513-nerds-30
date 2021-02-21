@@ -13,36 +13,36 @@
   <body class="page-body">
     <header class="main-header">
 
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="main-header-logo"><img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип Нёрдс"></a>
-      <ul class="main-wrapper">
-        <li>
-          <a href="#">Студия</a>
-        </li>
-        <li>
-          <a href="#">Клиенты</a>
-        </li>
-        <li>
-          <a href="#">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <div class="basket">
-        <a href="#">Корзина</a>
-      </div>
+        <ul class="main-wrapper">
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="basket">
+          <a href="#">Корзина</a>
+        </div>
       </nav>
     </header>
 
       <main>
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        <h1 class="filter-title">Магазин готовых шаблонов</h1>
         <div class="shop container">
           <section class="filter">
             <h2>Фильтр шаблонов</h2>
             <form method="get" action="#">
-              <fieldset>
-                <legend class="catalog-subject">СТОИМОСТЬ:</legend> <!--Не знаю как убрать рамку-->
+              <fieldset class="filter-cost-grid">
+                <legend class="catalog-subject">СТОИМОСТЬ:</legend>
                 <div><!--Бегунок СТОИМОСТЬ--></div>
               </fieldset>
               <fieldset class="filter-grid-fieldset">
@@ -121,39 +121,51 @@
             <ul class="catalog-list">
               <li>
                 <img src="img/img-sedona.jpg" width="358" height="578" alt="Сайт Седона">
-                <h3 class="catalog-subtitle"><a>SEDONA</a></h3><!--Не знаю как вызвать попап. Ссылка в состоянии покоя фиолетовая, а не черная-->
-                  <p class="catalog-description">Информационный сайт для туристов</p>
+                <div class="catalog-example">
+                  <h3 class="catalog-subtitle"><a>SEDONA</a></h3>
+                  <p class="catalog-description">Информационный сайт <br>для туристов</p>
                   <a class="catalog-button" href="">9 900Р</a>
+                </div>
               </li>
               <li>
                 <img src="img/img-pink.jpg" width="358" height="578" alt="Сайт PINK APP">
-                <h3 class="catalog-subtitle"><a>PINK APP</a></h3>
-                  <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
+                <div class="catalog-example">
+                  <h3 class="catalog-subtitle"><a>PINK APP</a></h3>
+                  <p class="catalog-description">Продуктовый лендинг <br>приложения для iOS и Android</p>
                   <a class="catalog-button" href="">9 900Р</a>
+                </div>
               </li>
               <li>
                 <img src="img/img-barbershop.jpg" width="358" height="578" alt="Сайт BARBERSHOP">
-                <h3 class="catalog-subtitle"><a>BARBERSHOP</a></h3>
+                <div class="catalog-example">
+                  <h3 class="catalog-subtitle"><a>BARBERSHOP</a></h3>
                   <p class="catalog-description">Сайт салона красоты. Для мужчин, да.</p>
-                  <a class="catalog-button" href="">9 900Р</a>>
+                  <a class="catalog-button" href="">9 900Р</a>
+                </div>
               </li>
               <li>
                 <img src="img/img-mishka.jpg" width="358" height="578" alt="Сайт Интернет-магазина">
-                <h3 class="catalog-subtitle"><a>MISHKA</a></h3>
+                <div class="catalog-example">
+                  <h3 class="catalog-subtitle"><a>MISHKA</a></h3>
                   <p class="catalog-description">Интернет-магазин вязаных игрушек</p>
                   <a class="catalog-button" href="">9 900Р</a>
+                </div>
               </li>
               <li>
                 <img src="img/img-a.jpg" width="358" height="578" alt="Лендинг курсов">
-                <h3 class="catalog-subtitle"><a>A PLUS</a></h3>
+                <div class="catalog-example">
+                  <h3 class="catalog-subtitle"><a>A PLUS</a></h3>
                   <p class="catalog-description">Лендинг курсов повышения квалификации</p>
                   <a class="catalog-button" href="">9 900Р</a>
+                </div>
               </li>
               <li>
                 <img src="img/img-kraft.jpg" width="358" height="578" alt="Сайт пенных напитков">
-                <h3 class="catalog-subtitle"><a>КВАСТ</a></h3>
+                <div class="catalog-example">
+                  <h3 class="catalog-subtitle"><a>КВАСТ</a></h3>
                   <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
                   <a class="catalog-button" href="">9 900Р</a>
+                </div>
               </li>
             </ul>
           </section>
@@ -173,8 +185,8 @@
           <button class="button-pagination" type="submit">СЛЕДУЮЩАЯ</button>
         </section>
 
-        <div>
-          <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+        <div class="map">
+          <img src="img/map.jpg" width="100%" height="416" alt="Карта">
         </div>
         <div class="contacts">
           <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
@@ -203,6 +215,9 @@
         <div class="footer-text">
           <p class="footer-slogan">Давайте дружить, это выгодно!</p>
           <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+        <div class="controls">
+          <div class="scale"></div>
         </div>
       </footer>
   </body>
