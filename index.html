@@ -30,45 +30,63 @@
           </li>
         </ul>
         <div class="basket">
-          <a href="#">Корзина</a>
+          <a class="basket-icon" href="#">Корзина</a>
         </div>
       </nav>
     </header>
 
      <main>
-        <h1 class="heading">Интернет магазин «Nerds»</h1>
-        <ul class="features-list">
-          <li class="features-item">
-            <p class="features-subtitle">Долго, дорого, <br>скрупулезно.</p>
-            <p class="features-text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-            <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-         </li>
-          <li class="features-item">
-            <p class="features-subtitle">Любим математику <br>как никто другой</p>
-            <p class="features-text">Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
-            <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          </li>
-          <li class="features-item">
-            <p class="features-subtitle">Только ночь, <br>только хардкор</p>
-            <p class="features-text">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
-            <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          </li>
-        </ul>
+        <h1 class="heading visually-hidden">Интернет магазин «Nerds»</h1>
+        <div class="fill">
+          <div class="features container">
+            <ul class="features-list">
+              <li class="features-item">
+                <p class="features-subtitle">Долго, дорого, <br>скрупулезно.</p>
+                <p class="features-text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+                <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              </li>
+              <li class="features-item slide">
+                <p class="features-subtitle">Любим математику <br>как никто другой</p>
+                <p class="features-text">Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
+                <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              </li>
+              <li class="features-item slide">
+                <p class="features-subtitle">Только ночь, <br>только хардкор</p>
+                <p class="features-text">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+                <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              </li>
+            </ul>
+            <div class="features-slider">
+              <img class="slide-current" src="img/page5.png" width="760" height="431" alt="Смартфоны">
+              <img class="slide" src="img/page6.png" width="760" height="431" alt="Компьютеры">
+              <img class="slide" src="img/page7.png" width="760" height="431" alt="Планшеты">
+              <div class="slide-button">
+                <button class="slide-button-left" type="button" aria-label="1 слайд"></button>
+                <button class="slide-button-active" type="button" aria-label="активный слайд"></button>
+                <button class="slide-button-center" type="button" aria-label="2 слайд"></button>
+                <button class="slide-button-right" type="button" aria-label="3 слайд"></button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <section class="services container">
-          <h2>Услуги</h2>
+          <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-list">
             <li class="services-item">
+              <img class="services-slide" src="img/page1.jpg" width="300" height="146" alt="Ноутбук">
               <h3 class="services-subject">ВЕБ-САЙТЫ</h3>
               <p class="services-text">Мир никогда не будет прежним после того как увидит ваши сайт!</p>
               <a class="services-button button" href="#">ЗАКАЗАТЬ</a>
             </li>
             <li class="services-item">
+              <img class="services-slide" src="img/page2.jpg" width="300" height="146" alt="Смартфоны">
               <h3 class="services-subject">ПРИЛОЖЕНИЯ</h3>
               <p class="services-text">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
               <a class="services-button button button-green" href="#">ЗАКАЗАТЬ</a>
             </li>
             <li class="services-item">
+              <img class="services-slide" src="img/page3.jpg" width="300" height="146" alt="Плакат с презентацией">
               <h3 class="services-subject">ПРЕЗЕНТАЦИИ</h3>
               <p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
               <a class="services-button button button-yellow" href="#">ЗАКАЗАТЬ</a>
@@ -78,7 +96,7 @@
 
         <section class="about container">
           <div>
-            <h2>О нас</h2>
+            <h2 class="visually-hidden">О нас</h2>
             <p class="about-headline">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
             <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
             <p class="about-caption">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
@@ -95,7 +113,7 @@
             </ul>
           </div>
           <div class="about-image">
-            <img src="img/page6.png" width="360" height="208" alt="Разноцветный логотип Нёрдс">
+            <img src="img/page4.png" width="360" height="208" alt="Разноцветный логотип Нёрдс">
             <p class="about-slogan">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
               <dl class="about-items">
                 <dt class="about-term">146<sup class="about-interest">%</sup></dt><dd class="about-definition">Уровень самоотдачи</dd>
@@ -106,7 +124,7 @@
         </section>
 
         <section class="companies container">
-          <h2>Шаблоны</h2>
+          <h2 class="visually-hidden">Шаблоны</h2>
           <ul class="companies-list">
             <li class="companies-item companies-html">
               <a><img src="img/logo-html.png" width="199" height="67.82" alt="html academy"></a>
@@ -137,13 +155,13 @@
           <h2 class="modal-title">НАПИШИТЕ НАМ</h2>
           <form class="modal-form" action="#" method="post">
             <label class="modal-label">
-              Ваше имя: <input class="modal-field" type="text" name="uzer" placeholder="Имя Фамилия">
+              Ваше имя: <input class="modal-field modal-name" type="text" name="uzer" placeholder="Имя Фамилия">
             </label>
             <label class="modal-label">
               Ваш email: <input class="modal-field" type="text" name="email" placeholder="email@example.com">
             </label>
             <label class="modal-label">
-              Текст письма: <input class="modal-field" type="text" name="letter" placeholder="В свободной форме">
+              Текст письма: <input class="modal-field modal-text" type="text" name="letter" placeholder="В свободной форме">
             </label>
             <button class="modal-button button" type="submit">ОТПРАВИТЬ</button>
           </form>
@@ -153,16 +171,16 @@
       <footer class="main-footer container">
 
         <section class="footer-social">
-          <h2>Соцсети</h2>
+          <h2 class="visually-hidden">Соцсети</h2>
           <ul class="footer-social-list">
             <li>
-              <a class="social-button">1<img src="img/vk-icon.svg" width="26.01" height="15" alt="Вконтакте"></a>
+              <a class="social-button-vk"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
             </li>
             <li>
-              <a class="social-button">2<img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+              <a class="social-button-fb"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
             </li>
             <li>
-              <a class="social-button">3<img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм"></a>
+              <a class="social-button-inst"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм"></a>
             </li>
           </ul>
         </section>
