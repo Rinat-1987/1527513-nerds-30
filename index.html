@@ -114,9 +114,9 @@
             <img src="img/page4.png" width="360" height="208" alt="Разноцветный логотип Нёрдс">
             <p class="about-slogan">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
               <dl class="about-items">
-                <dt class="about-term">146<sup class="about-interest">%</sup></dt><dd class="about-definition">Уровень самоотдачи</dd>
-                <dt class="about-term">100<sup class="about-interest">%</sup></dt><dd class="about-definition">Соблюдение сроков</dd>
-                <dt class="about-term">50<sup class="about-interest">%</sup></dt><dd class="about-definition">Минимальная предоплата</dd>
+                <div class="about-list"><dt class="about-term">146<sup class="about-interest">%</sup></dt><dd class="about-definition">Уровень самоотдачи</dd></div>
+                <div class="about-list"><dt class="about-term">100<sup class="about-interest">%</sup></dt><dd class="about-definition">Соблюдение сроков</dd></div>
+                <div class="about-list"><dt class="about-term">50<sup class="about-interest">%</sup></dt><dd class="about-definition">Минимальная предоплата</dd></div>
               </dl>
           </div>
         </section>
@@ -170,22 +170,21 @@
 
         <section class="footer-social">
           <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="footer-social-list">
-            <li>
-              <a class="social-button-vk"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
-            </li>
-            <li>
-              <a class="social-button-fb"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
-            </li>
-            <li>
-              <a class="social-button-inst"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм"></a>
-            </li>
-          </ul>
+          <div class="footer-social-list">
+            <a class="social-button-vk"></a>
+            <a class="social-button-fb"></a>
+            <a class="social-button-inst"></a>
+          </div>
+          <div class="footer-image">
+            <img class="footer-vk" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+            <img class="footer-fb" src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+            <img class="footer-inst" src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм">
+          </div>
+          <div class="footer-text">
+            <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+            <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </section>
-        <div class="footer-text">
-          <p class="footer-slogan">Давайте дружить, это выгодно!</p>
-          <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
       </footer>
   </body>
 </html>
