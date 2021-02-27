@@ -170,14 +170,22 @@
     grid-template-rows: auto auto auto;
   }
 
+  .features-slider {
+    background-image: url(../img/page5.png);
+    width: 760px;
+    height: 431px;
+    position: relative;
+  }
+
   .features-item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: start;
-    height: 430px;
+    width: 1157px;
+    height: 431px;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
 
   .features-subtitle {
@@ -185,6 +193,7 @@
     font-size: 55px;
     line-height: 55px;
     margin-bottom: 25px;
+    box-sizing: border-box;
   }
 
   .features-text,
@@ -195,13 +204,14 @@
 
   .features-text {
     margin-bottom: 38px;
+    box-sizing: border-box;
   }
 
   .features-button {
+    box-sizing: border-box;
     width: 240px;
     height: 50px;
-    text-align: center;
-    padding: 17px 54px 15px;
+    padding: 17px 54px 15px 54px;
   }
 
   .button {
@@ -230,14 +240,10 @@
     height: 431px;
   }
 
-  .slide-button {
-    position: relative;
-  }
-
   .slide-button-left {
     position: absolute;
-    left: -237px;
-    top: 317px;
+    left: 700px;
+    top: 217px;
     z-index: 2;
     padding: 0;
     width: 17px;
@@ -249,7 +255,7 @@
 
   .slide-button-active {
     position: absolute;
-    left: -231.5px;
+    left: 143.7px;
     top: 321.7px;
     z-index: 3;
     padding: 0;
@@ -262,7 +268,7 @@
 
   .slide-button-center {
     position: absolute;
-    left: -204px;
+    left: 173px;
     top: 317px;
     z-index: 2;
     padding: 0;
@@ -275,7 +281,7 @@
 
   .slide-button-right {
     position: absolute;
-    left: -170px;
+    left: 207px;
     top: 317px;
     z-index: 2;
     padding: 0;
