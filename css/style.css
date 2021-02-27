@@ -170,12 +170,12 @@
     grid-template-rows: auto auto auto;
   }
 
-  .features-slider {
+  /*.features-slider {
     background-image: url(../img/page5.png);
     width: 760px;
     height: 431px;
     position: relative;
-  }
+  }*/
 
   .features-item {
     display: flex;
@@ -186,6 +186,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  .features-item a {
+    background-image: url(../img/page5.png);
+    width: 760px;
+    height: 431px;
+    position: relative;
   }
 
   .features-subtitle {
