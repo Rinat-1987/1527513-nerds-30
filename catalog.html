@@ -30,7 +30,7 @@
           </li>
         </ul>
         <div class="basket">
-          <a href="#">Корзина</a>
+          <a class="basket-icon" href="#">Корзина</a>
         </div>
       </nav>
     </header>
@@ -39,51 +39,67 @@
         <h1 class="filter-title">Магазин готовых шаблонов</h1>
         <div class="shop container">
           <section class="filter">
-            <h2>Фильтр шаблонов</h2>
+            <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form method="get" action="#">
               <fieldset class="filter-cost-grid">
-                <legend class="catalog-subject">СТОИМОСТЬ:</legend>
-                <div><!--Бегунок СТОИМОСТЬ--></div>
+                <legend class="filter-subject">СТОИМОСТЬ:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      ОТ <input type="text" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      ДО <input type="text" name="max-price" value="15 000">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter-grid-fieldset">
                 <legend class="filter-grid-legend">СЕТКА:</legend>
                 <ul class="filter-grid-list">
                   <li>
-                    <input type="radio" name="grid" value="adaptiv" id="adaptiv" checked><!--Не знаю как сделать значки радиокнопок и чекбоксов прозрачными-->
-                    <label for="filter-adaptiv">Адаптивная</label><!--Не знаю как задать состояние "Заблокирован"-->
+                    <input class="visually-hidden filter-input-radio-on" type="radio" name="grid" value="adaptiv" id="adaptiv" checked>
+                    <label for="filter-adaptiv">Адаптивная</label>
                   </li>
                   <li>
-                    <input type="radio" name="grid" value="fix" id="fix">
+                    <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="fix" id="fix">
                     <label for="filter-fix">Фиксированная</label>
                   </li>
                   <li>
-                    <input type="radio" name="grid" value="gum" id="gum">
+                    <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="gum" id="gum">
                     <label for="filter-gum">Резиновая</label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="filter-variants-fildset">
+              <fieldset class="filter-variants-fieldset">
                 <legend class="filter-variants-legend">ОСОБЕННОСТИ:</legend>
                 <ul class="filter-variants-list">
                   <li>
-                    <input type="checkbox" name="slayder" id="slayder" checked>
+                    <input class="visually-hidden filter-input-checkbox-on" type="checkbox" name="slayder" id="slayder" checked>
                     <label for="variants-slayder">Слайдер</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="advantage" id="advantage">
+                    <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="advantage" id="advantage">
                     <label for="variants-advantage">Блок преимуществ</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="news" id="news" checked>
+                    <input class="visually-hidden filter-input-checkbox-on" type="checkbox" name="news" id="news" checked>
                     <label for="variants-news">Новости</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="gallery" id="gallery">
+                    <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="gallery" id="gallery">
                     <label for="variants-gallery">Галерея</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="basket" id="basket">
+                    <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="basket" id="basket">
                     <label for="variants-basket">Корзина</label>
                   </li>
                 </ul>
@@ -108,7 +124,7 @@
             </ul>
             <ul>
               <li>
-                <a>треугольник</a><!--треугольник-->
+                <a class="triangle">треугольник</a><!--треугольник-->
               </li>
               <li>
                 <a>треугольник</a><!--треугольник-->
@@ -117,7 +133,7 @@
           </section>
 
           <section class="catalog">
-            <h2>Варианты шаблонов</h2>
+            <h2 class="visually-hidden">Варианты шаблонов</h2>
             <ul class="catalog-list">
               <li>
                 <img src="img/img-sedona.jpg" width="358" height="578" alt="Сайт Седона">
@@ -199,25 +215,22 @@
       <footer class="main-footer container">
 
         <section class="footer-social">
-          <h2>Соцсети</h2>
+          <h2 class="visually-hidden">Соцсети</h2>
           <ul class="footer-social-list">
             <li>
-              <a class="social-button">1<img src="img/vk-icon.svg" width="26.01" height="15" alt="Вконтакте"></a>
+              <a class="social-button-vk"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
             </li>
             <li>
-              <a class="social-button">2<img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+              <a class="social-button-fb"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
             </li>
             <li>
-              <a class="social-button">3<img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм"></a>
+              <a class="social-button-inst"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм"></a>
             </li>
           </ul>
         </section>
         <div class="footer-text">
           <p class="footer-slogan">Давайте дружить, это выгодно!</p>
           <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-        <div class="controls">
-          <div class="scale"></div>
         </div>
       </footer>
   </body>

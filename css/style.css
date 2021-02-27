@@ -3,7 +3,7 @@
   --basic-grey-blue: #283136;
   --basic-white: #FFFFFF;
   --basic-grey: #666666;
-  --basic-del: #444444;
+  --basic-del-opacity: rgba(68, 68, 68, 0.5);
   --basic-pale-grey: #EEEEEE;
   --basic-dark-grey: #888888;
   --basic-light-grey: #D7DCDE;
@@ -12,6 +12,12 @@
   --basic-black-opacity: rgba(0, 0, 0, 0.6);
   --basic-white-opacity: rgba(0, 0, 0, 0.0001);
   --basic-grey-gradient: #E1E1E1;
+  --basic-grey-range: #D7DCDF;
+  --basic-toggle: #ABABAB;
+  --basic-checked: rgba(77, 77, 77, 0.4);
+  --basic-checked-hover: rgba(77, 77, 77, 1);
+  --basic-del: rgba(68, 68, 68, 1);
+  --basic-radio: #4D4D4D;
 
   --special-1: #FB565A;
   --special-2: #E74246;
@@ -72,8 +78,10 @@
     display: flex;
     justify-content: space-between;
     width: 437px;
-    margin-left: 202.13px;
-    margin-right: 285.84px;
+    margin: 0;
+    padding: 0;
+    margin-left: 202px;
+    margin-right: 246px;
   }
 
   .main-wrapper,
@@ -116,7 +124,7 @@
   .basket-icon::before {
     content: "";
     position: absolute;
-    top: 23px;
+    top: 28px;
     left: 1050px;
     width: 15px;
     height: 15px;
@@ -159,12 +167,15 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: auto auto min-content;
+    grid-template-rows: auto auto auto;
   }
 
   .features-item {
-    width: 400px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    height: 430px;
     padding: 0;
     margin: 0;
   }
@@ -187,7 +198,10 @@
   }
 
   .features-button {
-    padding: 17px 54px 15px 54px;
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    padding: 17px 54px 15px;
   }
 
   .button {
@@ -211,18 +225,18 @@
     background-color: var(--special-5);
   }
 
-  .features-slider {
-    position: relative;
-  }
-
   .features-slider img {
     width: 760px;
     height: 431px;
   }
 
+  .slide-button {
+    position: relative;
+  }
+
   .slide-button-left {
     position: absolute;
-    left: 139px;
+    left: -237px;
     top: 317px;
     z-index: 2;
     padding: 0;
@@ -235,7 +249,7 @@
 
   .slide-button-active {
     position: absolute;
-    left: 143.7px;
+    left: -231.5px;
     top: 321.7px;
     z-index: 3;
     padding: 0;
@@ -248,7 +262,7 @@
 
   .slide-button-center {
     position: absolute;
-    left: 173px;
+    left: -204px;
     top: 317px;
     z-index: 2;
     padding: 0;
@@ -261,7 +275,7 @@
 
   .slide-button-right {
     position: absolute;
-    left: 207px;
+    left: -170px;
     top: 317px;
     z-index: 2;
     padding: 0;
@@ -404,18 +418,18 @@
     flex-direction: column;
     justify-content: space-between;
     width: 350px;
-    height: 100px;
+    /*height: 100px;*/
     margin-top: 18px;
   }
 
   .about-items dt {
     width: 100px;
-    height: 50px;
+    /*height: 50px;*/
   }
 
   .about-items dd {
     width: 110px;
-    height: 40px;
+    /*height: 40px;*/
   }
 
   .about-term {
@@ -534,6 +548,30 @@
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
+    position: relative;
+  }
+
+  .modal-title::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 770px;
+    width: 21px;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/cross.svg");
+    /*opacity: 0.3;*/
+  }
+
+  .modal-title:hover::before {
+    background-image: url("../img/cross-red.svg");
+    /*opacity: 1;*/
+  }
+
+  .modal-title:active::before {
+    background-image: url("../img/cross-active.svg");
+    /*opacity: 0.1;*/
   }
 
   .modal-label {
@@ -547,9 +585,9 @@
     margin: 0;
     padding: 0;
     margin-top: 9px;
-    width: 360px;
+    width: 350px;
     height: 50px;
-    color: var(--basic-del);
+    color: var(--basic-del-opacity);
     font-size: 16px;
     line-height: 18px;
     border: 2px solid var(--basic-light-grey);
@@ -559,6 +597,9 @@
 
   .modal-field:hover {
     border: 2px solid var(--special-11);
+  }
+  .modal-field:focus::placeholder {
+    color: var(--basic-del);
   }
 
   .modal-field:focus {
@@ -658,6 +699,23 @@
     height: 15px;
   }
 
+  .social-button-vk:hover,
+  .social-button-fb:hover,
+  .social-button-inst:hover {
+    background-color: var(--special-2);
+  }
+
+  .social-button-vk:active,
+  .social-button-fb:active,
+  .social-button-inst:active {
+    background-color: var(--special-5);
+  }
+
+  .footer-social-list img:active {
+    opacity: 0.3;
+    /*color: var(--basic-red-opacity); - НЕ РАБОТАЕТ*/
+  }
+
   .footer-text {
     display: flex;
     flex-direction: column;
@@ -681,6 +739,8 @@
     margin-bottom: 74px;
   }
 
+  /*Вторая страница*/
+
   .filter-title {
     font-weight: 500;
     font-size: 55px;
@@ -688,13 +748,11 @@
     align-items: center;
     width: 100%;
     background-color: var(--basic-pale-grey);
-    padding: 85px 10px 115px;
-    margin: 0 auto;
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 108px;
+    margin: 0;
     text-align: center;
-  }
-
-  .catalog-subject {
-    margin-bottom: 235px;
   }
 
   .shop {
@@ -709,46 +767,87 @@
     grid-column: 1 / 2;
   }
 
-  .sorting {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    height: 75px;
-    width: 760px;
-    margin-left: 140px;
-    display: flex;
+  .filter-subject {
+    padding-top: 55px;
   }
 
-  .sorting-title {
-    margin-right: 80px;
+  .range-controls {
+    width: 260px;
+    height: 41px;
+    border-radius: 3px;
+    background-color: var(--basic-pale-grey);
+    padding-top: 39px;
+    margin-top: 48px;
+    position: relative;
   }
 
-  .sorting-list {
-    display: flex;
+  .range-controls .scale {
+    position: absolute;
+    height: 2px;
+    width: 205px;
+    left: 33px;
+    background: var(--basic-grey-range);
   }
 
-  .catalog {
-    grid-column: 2 / 4;
-    grid-row: 2 / 5;
-    margin-left: 140px;
+  .range-controls .bar {
+    position: absolute;
+    height: 2px;
+    width: 138px;
+    left: 18px;
+    background: var(--special-3);
   }
 
-  .catalog-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 40px;
-    text-align: center;
-    align-items: center;
+  .range-controls .toggle {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    left: 0;
+    top: 27px;
+    background: var(--basic-toggle);
+    border: 10px solid #FFFFFF;
+    border-radius: 50%;
     padding: 0;
+  }
+
+  .range-controls .toggle-min {
+    left: 26px;
+  }
+
+  .range-controls .toggle-max {
+    left: 168px;
+  }
+
+  .price-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+  }
+
+  .price-controls label {
+    text-transform: uppercase;
+  }
+
+  .price-controls input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 22px;
+    border: none;
+    width: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: var(--basic-grey-blue);
+    border-radius: 5px;
+    background: var(--basic-pale-grey);
   }
 
   .filter-cost-grid,
   .filter-grid-fieldset,
-  .filter-variants-fildset {
+  .filter-variants-fieldset {
     border: 0 none;
   }
 
-  .catalog-subject,
+  .filter-subject,
   .sorting-title,
   .filter-grid-legend,
   .filter-variants-legend {
@@ -785,9 +884,75 @@
     list-style: none;
   }
 
-  .filter-variants-fildset {
-    margin-top: 25px;
+  .filter-grid-fieldset {
+    margin-top: 54px;
+    position: relative;
+    display: block;
+    user-select: none;
   }
+
+  .filter-input-radio-on + label::before {
+    content:"";
+    position: absolute;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-on.svg);
+    opacity: 0.4;
+  }
+
+  .filter-input-radio-on + label:hover::before {
+    opacity: 1;
+  }
+
+  .filter-input-radio-off + label::before {
+    content:"";
+    position: absolute;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-off.svg);
+    opacity: 0.4;
+  }
+
+  .filter-input-radio-off + label:hover::before {
+    opacity: 1;
+  }
+
+  .filter-variants-fieldset {
+    margin-top: 25px;
+    position: relative;
+    display: block;
+    user-select: none;
+  }
+
+  .filter-input-checkbox-on + label::before {
+    content:"";
+    position: absolute;
+    left: 14px;
+    width: 25px;
+    height: 23px;
+    background-image: url(../img/checkbox-on.svg);
+    opacity: 0.4;
+  }
+
+  .filter-input-checkbox-on + label:hover::before {
+    opacity: 1;
+   }
+
+   .filter-input-checkbox-off + label::before {
+    content:"";
+    position: absolute;
+    left: 14px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    opacity: 0.4;
+  }
+
+  .filter-input-checkbox-off + label:hover::before {
+    opacity: 1;
+   }
 
   .button-filter {
     font-weight: 500;
@@ -801,14 +966,38 @@
     padding: 17px 89px 15px 88px;
     border: none;
     border-radius: 3px;
+    margin-top: 28px;
+    margin-left: 14px;
   }
 
   .button-filter:hover {
     background-color: var(--special-12);
+    outline: none;
   }
 
   .button-filter:active {
     background-color: var(--special-13);
+    color: var(--basic-low-opacity);
+    outline: none;
+  }
+
+  .sorting {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    height: 75px;
+    width: 760px;
+    margin-top: 42px;
+    margin-left: 140px;
+    display: flex;
+  }
+
+  .sorting-title {
+    margin-right: 80px;
+  }
+
+  .sorting-list {
+    display: flex;
+    position: relative;
   }
 
   .sorting-item a {
@@ -830,6 +1019,31 @@
 
   .sorting-active a {
     color: var(--basic-black);
+  }
+
+  .triangle {
+    content:"";
+    position: absolute;
+    left: 14px;
+    width: 11px;
+    height: 10px;
+ }
+
+  .catalog {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+    margin-left: 140px;
+    margin-top: 90px;
+  }
+
+  .catalog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
   }
 
   .catalog-example {
@@ -888,7 +1102,7 @@
   }
 
   .pagination {
-    margin-top: 800px; /*Это временно,тк у шаблонов скроется описание*/
+    margin-top: 840px; /*Это временно,тк у шаблонов скроется описание*/
     display: grid;
     grid-template-columns: min-content min-content;
   }
