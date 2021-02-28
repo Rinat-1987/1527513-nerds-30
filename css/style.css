@@ -555,8 +555,13 @@
   .contacts-address,
   .contacts-phone {
     color: var(--basic-grey);
+    margin: 0;
     margin-right: 39px;
     margin-left: 50px;
+  }
+
+  .contacts-phone {
+    padding-top: 15px;
   }
 
   .contacts-button {
@@ -566,7 +571,7 @@
   }
 
   .modal {
-    padding: 63px 90px 84px 100px;
+    padding: 10px 90px 10px 100px;
     width: 960px;
     height: 590px;
   }
