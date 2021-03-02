@@ -82,49 +82,49 @@
       </nav>
     </header>
 
-      <main>
-        <h1 class="filter-title">Магазин готовых шаблонов</h1>
-        <div class="shop container">
-          <section class="filter">
-            <h2 class="visually-hidden">Фильтр шаблонов</h2>
-            <form method="get" action="#">
-              <fieldset class="filter-cost-grid">
-                <legend class="filter-subject">СТОИМОСТЬ:</legend>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
-                  </div>
-                  <div class="price-controls">
-                    <label class="min-price">
-                      ОТ <input type="text" name="min-price" value="0">
-                    </label>
-                    <label class="max-price">
-                      ДО <input type="text" name="max-price" value="15 000">
-                    </label>
-                  </div>
+    <main>
+      <h1 class="filter-title">Магазин готовых шаблонов</h1>
+      <div class="filter-shop container">
+        <section class="filter-section">
+           <h2 class="visually-hidden">Фильтр шаблонов</h2>
+           <form method="get" action="#">
+             <fieldset class="filter-cost-grid">
+               <legend class="filter-subject">СТОИМОСТЬ:</legend>
+               <div class="filter-range">
+                 <div class="range-controls">
+                   <div class="scale">
+                     <div class="bar"></div>
+                   </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
-              </fieldset>
-              <fieldset class="filter-grid-fieldset">
-                <legend class="filter-grid-legend">СЕТКА:</legend>
-                <ul class="filter-grid-list">
-                  <li>
-                    <input class="visually-hidden filter-input-radio-on" type="radio" name="grid" value="adaptiv" id="adaptiv" checked>
-                    <label for="filter-adaptiv">Адаптивная</label>
-                  </li>
-                  <li>
-                    <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="fix" id="fix">
-                    <label for="filter-fix">Фиксированная</label>
-                  </li>
-                  <li>
-                    <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="gum" id="gum">
-                    <label for="filter-gum">Резиновая</label>
-                  </li>
-                </ul>
-              </fieldset>
+                <div class="price-controls">
+                  <label class="min-price">
+                    ОТ <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    ДО <input type="text" name="max-price" value="15 000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-grid-fieldset">
+              <legend class="filter-grid-legend">СЕТКА:</legend>
+              <ul class="filter-grid-list">
+                <li>
+                  <input class="visually-hidden filter-input-radio-on" type="radio" name="grid" value="adaptiv" id="adaptiv" checked>
+                  <label for="filter-adaptiv">Адаптивная</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="fix" id="fix">
+                  <label for="filter-fix">Фиксированная</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="gum" id="gum">
+                  <label for="filter-gum">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
 
               <fieldset class="filter-variants-fieldset">
                 <legend class="filter-variants-legend">ОСОБЕННОСТИ:</legend>
@@ -170,16 +170,14 @@
               </li>
             </ul>
             <div class="sorting-rewind">
-              <a class="sorting-triangle">
+              <a class="sorting-triangle sorting-triangle-active">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#231F20"/>
                 </svg>
               </a>
-              <a class="sorting-triangle">
+              <a class="sorting-triangle second-triangle">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.2">
-                    <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
-                    </g>
+                  <path d="M5.5 10L0 0H11" fill="#231F20"/>
                 </svg>
               </a>
             </div>
@@ -265,7 +263,7 @@
         </div>
         <div class="contacts">
           <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
-          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
+          <p class="contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
           <a class="contacts-phone" href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
           <button class="contacts-button button" type="submit">НАПИШИТЕ НАМ</button>
         </div>
@@ -275,7 +273,7 @@
 
         <section class="footer-social">
           <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="footer-social-list">
+          <div class="footer-social-list">
             <a class="social-button">
               <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983
@@ -311,7 +309,7 @@
 7H18V3H14V7Z" fill="white"/>
               </svg>
             </a>
-          </ul>
+          </div>
           <div class="footer-text">
             <p class="footer-slogan">Давайте дружить, это выгодно!</p>
             <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
