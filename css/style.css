@@ -577,49 +577,63 @@
     position: absolute;
     top: 54px;
     left: 140px;
-    display: grid;
-    grid-template-rows: repeat(4, min-content);
     box-sizing: border-box;
     padding: 49px 50px 47px;
     width: 319px;
     height: 308px;
     background-color: white;
     z-index: 3;
-    align-items: center;
   }
 
   .contacts-name {
+    position: absolute;
+    top: 30px;
+    left: 50px;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    align-items: center;
-    margin: 49px 76px 22.71px 50px;
-    align-items: center;
   }
 
   .contacts-address,
   .contacts-phone {
     color: var(--basic-grey);
-    margin: 0;
-    margin-right: 39px;
-    margin-left: 50px;
+  }
+
+  .contacts-address {
+    position: absolute;
+    top: 75px;
+    left: 50px;
   }
 
   .contacts-phone {
-    padding-top: 15px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
   }
 
   .contacts-button {
-    margin: 37.29px 50px 47px;
+    position: absolute;
+    top: 210px;
+    left: 50px;
     padding: 17px 44px 15px;
     width: 219px;
   }
 
   .modal {
-    position: fixed;
-    padding: 10px 90px 10px 100px;
+    position: relative;
+  }
+
+  .modal-tooltip {
+    position: absolute;
+    top: -590px;
+    left: 240px;
+    box-sizing: border-box;
     width: 960px;
     height: 590px;
+    padding: 10px 90px 84px 100px;
+    z-index: 4;
+    background-color: var(--basic-white);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   }
 
   .modal-header {
@@ -634,9 +648,9 @@
     line-height: 53px;
   }
 
-  .modal-close {
+  .modal-close svg {
     border: none;
-    background-image: none;
+    background-color: none;
   }
 
   .modal-form {
@@ -645,28 +659,6 @@
    margin: 0;
    padding: 0;
   }
-
-  /*.modal-title::before {
-    content: "";
-    position: absolute;
-    top: 11px;
-    left: 770px;
-    width: 21px;
-    height: 21px;
-    margin: 0;
-    padding: 0;
-    background-image: url("../img/cross.svg");
-
-  }
-
-  .modal-title:hover::before {
-    background-image: url("../img/cross-red.svg");
-
-
-  .modal-title:active::before {
-    background-image: url("../img/cross-active.svg");
-
-  }*/
 
   .modal-label {
     font-weight: 700;
@@ -719,6 +711,7 @@
   .footer-social {
     display: flex;
     justify-content: start;
+    padding-top: 75px;
     padding-bottom: 76px;
   }
 
@@ -764,7 +757,6 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0;
-    padding-top: 20px;
   }
 
   .footer-discount {
@@ -1104,6 +1096,7 @@
   }
 
   .catalog-list {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -1121,16 +1114,38 @@
     background: var(--basic-pale-grey);
   }
 
+  .catalog-header-off {
+    background-image: url(../img/header-off.svg);
+    width: 360px;
+    height: 40px;
+  }
+
   .catalog-header-on {
     background-image: url(../img/header-on.svg);
     width: 360px;
     height: 40px;
   }
 
-  .catalog-header-off {
-    background-image: url(../img/header-off.svg);
-    width: 360px;
-    height: 40px;
+  .catalog-shadow {
+    filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+  }
+
+  .catalog-tooltip-sedona,
+  .catalog-tooltip-pinkapp {
+    position: absolute;
+    top: 380px;
+}
+
+  .catalog-tooltip-barbershop,
+  .catalog-tooltip-mishka {
+    position: absolute;
+    top: 1050px;
+  }
+
+  .catalog-tooltip-aplus,
+  .catalog-tooltip-kvast {
+    position: absolute;
+    top: 1716px;
   }
 
   .catalog-subtitle a {
