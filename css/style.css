@@ -325,8 +325,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
-    column-gap: 140px;
+    column-gap: 100px;
     margin: 0;
+    padding: 0;
   }
 
   .services-item {
@@ -576,7 +577,7 @@
   .contacts {
     position: absolute;
     top: 54px;
-    left: 140px;
+    left: 170px;
     box-sizing: border-box;
     padding: 49px 50px 47px;
     width: 319px;
@@ -648,9 +649,11 @@
     line-height: 53px;
   }
 
-  .modal-close svg {
+  .modal-close {
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
     border: none;
-    background-color: none;
   }
 
   .modal-form {
