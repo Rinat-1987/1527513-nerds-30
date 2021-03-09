@@ -1,5 +1,6 @@
 let contactsbutton = document.querySelector('.contacts-button');
 let tooltipmodal = document.querySelector('.modal-tooltip');
+let modalclose = document.querySelector('.modal-close');
 
 let sedona = document.querySelector('.catalog-sedona');
 let tooltipsedona = document.querySelector('.catalog-tooltip-sedona');
@@ -27,6 +28,10 @@ let kvastheader = document.querySelector('.catalog-header-kvast');
 
 contactsbutton.onclick = function () {
   tooltipmodal.classList.remove('visually-hidden');
+}
+
+modalclose.onclick = function () {
+  tooltipmodal.classList.add('visually-hidden');
 }
 
 sedona.onclick = function () {
