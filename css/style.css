@@ -101,11 +101,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 437px;
+    width: 442px;
     margin: 0;
     padding: 0;
     margin-left: 202px;
-    margin-right: 246px;
+    margin-right: 236px;
+    padding-top: 12px;
   }
 
   .main-wrapper,
@@ -120,9 +121,19 @@
   }
 
   .main-studio-active {
-   color: var(--basic-black);
-   border-bottom: 2px solid#FB565A;
-   padding-bottom: 12px;
+    color: var(--basic-black);
+    border-bottom: 2px solid#FB565A;
+    padding-bottom: 12px;
+  }
+
+  .main-clients {
+    margin-top: 6px;
+    margin-left: 6px;
+  }
+
+  .main-shop {
+    margin-top: 5px;
+    margin-left: 6px;
   }
 
   .main-shop-active {
@@ -150,6 +161,7 @@
 
   .basket {
     padding-left: 50px;
+    margin-top: 11px;
   }
 
   .basket::after {
@@ -165,8 +177,8 @@
   .basket-icon::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 1050px;
+    top: 35px;
+    left: 1046px;
     width: 15px;
     height: 15px;
     margin: 0;
@@ -205,6 +217,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-right: 7px;
+    margin-top: 17px;
     display: grid;
     grid-template-rows: auto auto auto;
   }
@@ -253,6 +267,7 @@
   }
 
   .features-text {
+    margin-top: 3px;
     margin-bottom: 38px;
     box-sizing: border-box;
   }
