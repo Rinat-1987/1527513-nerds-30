@@ -209,7 +209,7 @@
   .features {
     display: flex;
     width: 1157px;
-    height: 431px;
+    height: 425px;
   }
 
   .features-list {
@@ -238,6 +238,8 @@
 
   .slide-smartphones {
     background-image: url(../img/page5.png);
+    margin-top: -23px;
+    margin-left: 1px;
   }
 
   .slide-desktops {
@@ -257,6 +259,8 @@
     font-size: 55px;
     line-height: 55px;
     margin-bottom: 25px;
+    margin-top: 77px;
+    margin-left: -2px;
     box-sizing: border-box;
   }
 
@@ -313,13 +317,13 @@
   .slide-button-left {
     position: absolute;
     left: 538px;
-    bottom: 95px;
+    bottom: 97px;
   }
 
   .slide-button-active {
     position: absolute;
-    left: 543px;
-    bottom: 99px;
+    left: 542px;
+    bottom: 101.7px;
     z-index: 3;
     padding: 0;
     width: 8px;
@@ -332,13 +336,13 @@
   .slide-button-center {
     position: absolute;
     left: 572px;
-    bottom: 95px;
+    bottom: 97px;
   }
 
   .slide-button-right {
     position: absolute;
     left: 605px;
-    bottom: 95px;
+    bottom: 97px;
   }
 
   .services {
@@ -350,7 +354,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
-    column-gap: 100px;
+    column-gap: 43px;
     margin: 0;
     padding: 0;
   }
@@ -359,7 +363,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     width: 300px;
-    height: 146px;
+    height: 148px;
   }
 
   .services-desktop {
@@ -375,7 +379,7 @@
   }
 
   .services-subject {
-    margin-top: 180px;
+    margin-top: 172px;
     margin-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
@@ -383,13 +387,13 @@
   }
 
   .services-text {
-    margin-bottom: 32px;
+    margin-bottom: 46px;
     width: 260px;
   }
 
   .services-button {
     padding: 17px 40px 15px 39px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 
   .button-green {
@@ -427,7 +431,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 149px;
-    margin-bottom: 70px;
+    margin-bottom: 62px;
     border-top: 2px solid #EEEEEE;
   }
 
@@ -457,18 +461,20 @@
   .about-opportunities {
     list-style: none;
     margin: 0;
+    line-height: 1.4em;
     position: relative;
   }
 
   .about-item {
     color: var(--basic-grey-blue);
-    margin-top: 30px;
+    margin-top: 26px;
+    margin-left: -2px;
   }
 
   .about-sites::after {
     position: absolute;
-    top: 12px;
-    left: 7px;
+    top: 10px;
+    left: 2px;
     content:"";
     background-image: url("../img/line-icon.svg");
     width: 25px;
@@ -477,8 +483,8 @@
 
   .about-mobile::after {
     position: absolute;
-    top: 67px;
-    left: 7px;
+    top: 58px;
+    left: 1px;
     content:"";
     background-image: url("../img/line-icon.svg");
     width: 25px;
@@ -487,8 +493,8 @@
 
   .about-video::after {
     position: absolute;
-    top: 119px;
-    left: 7px;
+    top: 107px;
+    left: 1px;
     content:"";
     background-image: url("../img/line-icon.svg");
     width: 25px;
@@ -502,7 +508,8 @@
   .about-slogan {
     font-weight: 700;
     text-align: center;
-    margin-top: 37px;
+    margin-top: 30px;
+    margin-left: 4px;
   }
 
   .about-items {
@@ -511,7 +518,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 350px;
-    margin-top: 18px;
+    margin-top: 30px;
+    margin-left: 2px;
   }
 
   .about-list {
@@ -549,6 +557,7 @@
     color: var(--basic-grey-blue);
     margin: 0;
     padding: 0;
+    margin-top: 10px;
   }
 
   .companies {
