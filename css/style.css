@@ -561,10 +561,10 @@
   }
 
   .companies {
-    height: 181px;
+    height: 180px;
     border-top: 2px solid #EEEEEE;
     border-bottom: 2px solid #EEEEEE;
-    margin-bottom: 82px;
+    margin-bottom: 81px;
   }
 
   .companies-list {
@@ -614,8 +614,8 @@
 
   .contacts {
     position: absolute;
-    top: 54px;
-    left: 170px;
+    top: 51px;
+    left: 142px;
     box-sizing: border-box;
     padding: 49px 50px 47px;
     width: 319px;
@@ -626,7 +626,7 @@
 
   .contacts-name {
     position: absolute;
-    top: 30px;
+    top: 31px;
     left: 50px;
     font-weight: 700;
     font-size: 18px;
@@ -640,22 +640,33 @@
 
   .contacts-address {
     position: absolute;
-    top: 75px;
+    top: 83px;
     left: 50px;
+    line-height: 1.2em;
   }
 
   .contacts-phone {
     position: absolute;
-    top: 150px;
+    top: 152px;
     left: 50px;
   }
 
   .contacts-button {
     position: absolute;
-    top: 210px;
+    top: 212px;
     left: 50px;
     padding: 17px 44px 15px;
     width: 219px;
+  }
+
+  .map-marker {
+    position: absolute;
+    top: 83px;
+    left: 823px;
+    z-index: 3;
+    background-image: url(../img/map-marker.png);
+    width: 231px;
+    height: 190px;
   }
 
   .modal {
@@ -774,7 +785,7 @@
   .footer-social {
     display: flex;
     justify-content: start;
-    padding-top: 75px;
+    padding-top: 68px;
     padding-bottom: 76px;
   }
 
@@ -795,6 +806,7 @@
     background-color: var(--basic-grey-gradient);
     border-radius: 50%;
     border: none;
+    margin-left: 1px;
   }
 
   .social-button:hover {
@@ -813,6 +825,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 139px;
+    margin-top: 3px;
   }
 
   .footer-slogan {
