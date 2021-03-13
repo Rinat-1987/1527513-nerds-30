@@ -113,17 +113,10 @@
   .basket {
     align-items: center;
     text-transform: uppercase;
-    font-size: 16px;
     line-height: 30px;
     font-weight: 500;
     list-style: none;
     text-align: center;
-  }
-
-  .main-studio-active {
-    color: var(--basic-black);
-    border-bottom: 2px solid#FB565A;
-    padding-bottom: 18px;
   }
 
   .main-clients {
@@ -138,7 +131,7 @@
 
   .main-shop-active {
     color: var(--basic-black);
-    border-bottom: 2px solid#FB565A;
+    border-bottom: 2px solid var(--special-1);
     padding-bottom: 18px;
   }
 
@@ -162,16 +155,6 @@
   .basket {
     padding-left: 50px;
     margin-top: 11px;
-  }
-
-  .basket::after {
-    content: "";
-    position: absolute;
-    left: 1050px;
-    bottom: 3px;
-    width: 112px;
-    height: 2px;
-    background: var(--special-1)
   }
 
   .basket-icon::before {
@@ -569,12 +552,16 @@
 
   .companies-list {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 30px;
+    position: relative;
   }
 
   .companies-item {
     list-style: none;
     opacity: 0.2;
-    padding-top: 46px;
   }
 
   .companies-item a {
@@ -590,17 +577,41 @@
   }
 
   .companies-html {
-    margin-left: 32px;
-    margin-right: 95px;
+    margin-left: 27px;
+    margin-right: 100px;
+    margin-top: 9px;
+  }
+
+  .companies-html a::before,
+  .companies-borodinski a::before,
+  .companies-pink a::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 50px;
+    top: 50px;
+    background: var(--basic-pale-grey);
+  }
+
+  .companies-html a::before {
+    left: 280px;
   }
 
   .companies-borodinski {
     margin-right: 104px;
   }
 
+  .companies-borodinski a::before {
+    left: 580px;
+   }
+
   .companies-pink {
     margin-right: 120px;
   }
+
+  .companies-pink a::before {
+    left: 880px;
+   }
 
   .companies-mishka {
     margin-right: 43px;
@@ -629,7 +640,7 @@
 
   .contacts-name {
     position: absolute;
-    top: 31px;
+    top: 33px;
     left: 50px;
     font-weight: 700;
     font-size: 18px;
@@ -643,14 +654,14 @@
 
   .contacts-address {
     position: absolute;
-    top: 83px;
+    top: 87px;
     left: 50px;
-    line-height: 1.2em;
+    line-height: 18px;
   }
 
   .contacts-phone {
     position: absolute;
-    top: 152px;
+    top: 154px;
     left: 50px;
   }
 
@@ -788,8 +799,8 @@
   .footer-social {
     display: flex;
     justify-content: start;
-    padding-top: 68px;
-    padding-bottom: 76px;
+    padding-top: 67px;
+    padding-bottom: 75px;
   }
 
   .footer-social-list {
@@ -797,6 +808,7 @@
     justify-content: space-between;
     width: 260px;
     height: 79px;
+    padding-left: -2px;
   }
 
   .social-button {
@@ -827,8 +839,8 @@
   .footer-text {
     display: flex;
     flex-direction: column;
-    margin-left: 139px;
-    margin-top: 3px;
+    margin-left: 140px;
+    margin-top: 6px;
   }
 
   .footer-slogan {
@@ -839,7 +851,6 @@
   }
 
   .footer-discount {
-    font-size: 16px;
     line-height: 22px;
     color:var(--basic-del);
     margin: 0;
@@ -940,10 +951,12 @@
 
   .min-price {
     margin-top: -2px;
+    line-height: 22px;
   }
 
   .max-price {
     margin-top: -4px;
+    line-height: 22px;
   }
 
   .price-controls input {
@@ -1018,8 +1031,8 @@
 
   .filter-grid-list {
     margin-top: -10px;
-    margin-left: -2px;
-    line-height: 1.25em;
+    margin-left: -4px;
+    line-height: 20px;
   }
 
   .filter-input-radio-on + label::before {
@@ -1051,7 +1064,7 @@
   }
 
   .filter-variants-fieldset {
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: -13px;
     position: relative;
     display: block;
@@ -1060,10 +1073,11 @@
 
   .filter-variants-legend {
    margin-left: 2px;
+   line-height: 30px;
   }
 
   .filter-variants-list {
-    line-height: 1.2em;
+    line-height: 20px;
     margin-top: -10px;
     margin-left: -2px;
   }
@@ -1323,17 +1337,16 @@
   }
 
   .pagination {
-    margin-top: 49px;
-    display: grid;
-    grid-template-columns: min-content min-content;
+    margin-top: 47px;
+    display: flex;
   }
 
   .pagination-list {
-    display: grid;
-    grid-template-columns: repeat(3, min-content);
-    grid-gap: 11px;
+    display: flex;
+    justify-content: space-between;
     margin-left: 362px;
     margin-bottom: 60px;
+    width: 170px;
   }
 
   .pagination-item a {
@@ -1372,6 +1385,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    margin-top: 2px;
     margin-left: 11px;
     width: 260px;
     height: 50px;
