@@ -8,13 +8,13 @@
     <link rel="apple-touch-icon" href="img/fav180.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.mini.css">
   </head>
   <body class="page-body">
     <header class="main-header">
 
       <nav class="main-navigation container">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="Логотип Нердс">
           <svg width="160" height="66" viewBox="0 0 160 66" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M48.031 24.783C51.682 28.757 59.647 25.158
 57.062 19.861C55.336 16.305 52.75 17.13 50.904 18.041C47.208 19.82 46.509 23.088 48.031 24.783ZM42.105
@@ -64,20 +64,20 @@
         </a>
         <ul class="main-wrapper">
           <li>
-            <a href="index.html">Студия</a>
+            <a href="index.html" aria-label="Пункт меню">Студия</a>
           </li>
           <li>
-            <a href="#">Клиенты</a>
+            <a href="#" aria-label="Пункт меню">Клиенты</a>
           </li>
           <li>
-            <a class="main-shop-active" href="#">Магазин</a>
+            <a class="main-shop-active" href="#" aria-label="Пункт меню">Магазин</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="#" aria-label="Пункт меню">Контакты</a>
           </li>
         </ul>
         <div class="basket">
-          <a class="basket-icon" href="#">Корзина</a>
+          <a class="basket-icon" href="#" aria-label="">Корзина</a>
         </div>
       </nav>
     </header>
@@ -100,10 +100,10 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    ОТ <input type="text" name="min-price" value="0">
+                    ОТ <input type="text" name="min-price" value="0" aria-label="Стоимость от">
                   </label>
                   <label class="max-price">
-                    ДО <input type="text" name="max-price" value="15 000">
+                    ДО <input type="text" name="max-price" value="15 000" aria-label="Стоимость до">
                   </label>
                 </div>
               </div>
@@ -112,15 +112,15 @@
               <legend class="filter-grid-legend">СЕТКА:</legend>
               <ul class="filter-grid-list">
                 <li>
-                  <input class="visually-hidden filter-input-radio-on" type="radio" name="grid" value="adaptiv" id="filter-adaptiv" checked>
+                  <input class="visually-hidden filter-input-radio-on" type="radio" name="grid" value="adaptiv" id="filter-adaptiv" aria-label="Адаптивная сетка" checked>
                   <label for="filter-adaptiv">Адаптивная</label>
                 </li>
                 <li>
-                  <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="fix" id="filter-fix">
+                  <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="fix" id="filter-fix" aria-label="Фиксированная сетка">
                   <label for="filter-fix">Фиксированная</label>
                 </li>
                 <li>
-                  <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="gum" id="filter-gum">
+                  <input class="visually-hidden filter-input-radio-off" type="radio" name="grid" value="gum" id="filter-gum" aria-label="Резиновая сетка">
                   <label for="filter-gum">Резиновая</label>
                 </li>
               </ul>
@@ -130,29 +130,29 @@
               <legend class="filter-variants-legend">ОСОБЕННОСТИ:</legend>
               <ul class="filter-variants-list">
                 <li>
-                  <input class="visually-hidden filter-input-checkbox-on" type="checkbox" name="slayder" id="variants-slayder" checked>
+                  <input class="visually-hidden filter-input-checkbox-on" type="checkbox" name="slayder" id="variants-slayder" aria-label="Добавить слайдер" checked>
                   <label for="variants-slayder">Слайдер</label>
                 </li>
                 <li>
-                  <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="advantage" id="variants-advantage">
+                  <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="advantage" id="variants-advantage" aria-label="Добавить блок преимуществ">
                   <label for="variants-advantage">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input class="visually-hidden filter-input-checkbox-on" type="checkbox" name="news" id="variants-news" checked>
+                  <input class="visually-hidden filter-input-checkbox-on" type="checkbox" name="news" id="variants-news" aria-label="Добавить новости" checked>
                   <label for="variants-news">Новости</label>
                 </li>
                 <li>
-                  <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="gallery" id="variants-gallery">
+                  <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="gallery" id="variants-gallery" aria-label="Добавить новости">
                   <label for="variants-gallery">Галерея</label>
                 </li>
                 <li>
-                  <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="basket" id="variants-basket">
+                  <input class="visually-hidden filter-input-checkbox-off" type="checkbox" name="basket" id="variants-basket" aria-label="Добавить корзину">
                   <label for="variants-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
 
-            <button class="button-filter" type="submit">ПОКАЗАТЬ</button>
+            <button class="button-filter" type="submit" aria-label="">ПОКАЗАТЬ</button>
           </form>
         </section>
 
@@ -160,22 +160,22 @@
           <h2 class="sorting-title">СОРТИРОВАТЬ:</h2>
           <ul class="sorting-list">
             <li class="sorting-item sorting-active">
-              <a href="#">ПО ЦЕНЕ</a>
+              <a href="#" aria-label="Сортировать">ПО ЦЕНЕ</a>
             </li>
             <li class="sorting-item">
-              <a href="#">ПО ТИПУ</a>
+              <a href="#" aria-label="Сортировать">ПО ТИПУ</a>
             </li>
             <li class="sorting-item">
-              <a href="#">ПО НАЗВАНИЮ</a>
+              <a href="#" aria-label="Сортировать">ПО НАЗВАНИЮ</a>
             </li>
           </ul>
           <div class="sorting-rewind">
-            <a class="sorting-triangle sorting-triangle-active">
+            <a class="sorting-triangle sorting-triangle-active" aria-label="Вниз по списку">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="#231F20"/>
               </svg>
             </a>
-            <a class="sorting-triangle second-triangle">
+            <a class="sorting-triangle second-triangle" aria-label="Вверх по списку" >
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 10L0 0H11" fill="#231F20"/>
               </svg>
@@ -187,57 +187,57 @@
           <h2 class="visually-hidden">Варианты шаблонов</h2>
           <ul class="catalog-list">
             <li>
-              <div class="catalog-header-off catalog-header-sedona"></div>
+              <div class="catalog-header catalog-header-sedona"></div>
               <img class="catalog-sedona" src="img/img-sedona.jpg" width="358" height="578" alt="Сайт Седона">
-              <div class="catalog-example catalog-tooltip-sedona visually-hidden">
+              <div class="catalog-example catalog-tooltip-sedona">
                 <h3 class="catalog-subtitle"><a>SEDONA</a></h3>
                 <p class="catalog-description">Информационный сайт <br>для туристов</p>
-                <a class="catalog-button " href="">9 900 <span>&#8381;</span></a>
+                <a class="catalog-button " href="" aria-label="Заказать информационный сайт">9 900 <span>&#8381;</span></a>
               </div>
             </li>
             <li>
-              <div class="catalog-header-off catalog-header-pinkapp"></div>
+              <div class="catalog-header catalog-header-pinkapp"></div>
               <img class="catalog-pinkapp" src="img/img-pink.jpg" width="358" height="578" alt="Сайт PINK APP">
-              <div class="catalog-example catalog-tooltip-pinkapp visually-hidden">
+              <div class="catalog-example catalog-tooltip-pinkapp">
                 <h3 class="catalog-subtitle"><a>PINK APP</a></h3>
                 <p class="catalog-description">Продуктовый лендинг <br>приложения для iOS и Android</p>
-                <a class="catalog-button" href="">9 900 <span>&#8381;</span></a>
+                <a class="catalog-button" href="" aria-label="Заказать приложение">9 900 <span>&#8381;</span></a>
               </div>
             </li>
             <li>
-              <div class="catalog-header-off catalog-header-barbershop"></div>
+              <div class="catalog-header catalog-header-barbershop"></div>
               <img class="catalog-barbershop" src="img/img-barbershop.jpg" width="358" height="578" alt="Сайт BARBERSHOP">
-              <div class="catalog-example catalog-tooltip-barbershop visually-hidden">
+              <div class="catalog-example catalog-tooltip-barbershop">
                 <h3 class="catalog-subtitle"><a>BARBERSHOP</a></h3>
-                <p class="catalog-description">Сайт салона красоты. Для мужчин, да.</p>
-                <a class="catalog-button" href="">9 900 <span>&#8381;</span></a>
+                <p class="catalog-description">Сайт салона красоты.<br>Для мужчин, да.</p>
+                <a class="catalog-button" href="" aria-label="Заказать сайт салона красоты">9 900 <span>&#8381;</span></a>
               </div>
             </li>
             <li>
-              <div class="catalog-header-off catalog-header-mishka"></div>
+              <div class="catalog-header catalog-header-mishka"></div>
               <img class="catalog-mishka" src="img/img-mishka.jpg" width="358" height="578" alt="Сайт Интернет-магазина">
-              <div class="catalog-example catalog-tooltip-mishka visually-hidden">
+              <div class="catalog-example catalog-tooltip-mishka">
                 <h3 class="catalog-subtitle"><a>MISHKA</a></h3>
-                <p class="catalog-description">Интернет-магазин вязаных игрушек</p>
-                <a class="catalog-button" href="">9 900 <span>&#8381;</span></a>
+                <p class="catalog-description">Интернет-магазин<br>вязаных игрушек</p>
+                <a class="catalog-button" href="" aria-label="Заказать интернет-магазин">9 900 <span>&#8381;</span></a>
               </div>
             </li>
             <li>
-              <div class="catalog-header-off catalog-header-aplus"></div>
+              <div class="catalog-header catalog-header-aplus"></div>
               <img class="catalog-aplus" src="img/img-a.jpg" width="358" height="578" alt="Лендинг курсов">
-              <div class="catalog-example catalog-tooltip-aplus visually-hidden">
+              <div class="catalog-example catalog-tooltip-aplus">
                 <h3 class="catalog-subtitle"><a>A PLUS</a></h3>
-                <p class="catalog-description">Лендинг курсов повышения квалификации</p>
-                <a class="catalog-button" href="">9 900 <span>&#8381;</span></a>
+                <p class="catalog-description">Лендинг курсов повышения<br>квалификации</p>
+                <a class="catalog-button" href="" aria-label="Заказать лендинг информационных курсов">9 900 <span>&#8381;</span></a>
               </div>
             </li>
             <li>
-              <div class="catalog-header-off catalog-header-kvast"></div>
+              <div class="catalog-header catalog-header-kvast"></div>
               <img class="catalog-kvast" src="img/img-kraft.jpg" width="358" height="578" alt="Сайт пенных напитков">
-              <div class="catalog-example catalog-tooltip-kvast visually-hidden">
+              <div class="catalog-example catalog-tooltip-kvast">
                 <h3 class="catalog-subtitle"><a>КВАСТ</a></h3>
-                <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
-                <a class="catalog-button" href="">9 900 <span>&#8381;</span></a>
+                <p class="catalog-description">Промо-сайт производителя<br>крафтового кваса</p>
+                <a class="catalog-button" href="" aria-label="Заказать продуктовый сайт">9 900 <span>&#8381;</span></a>
               </div>
             </li>
           </ul>
@@ -246,26 +246,30 @@
       <section class="pagination container">
         <ul class="pagination-list">
           <li class="pagination-item pagination-active">
-            <a>1</a>
+            <a aria-label="1 страница списка">1</a>
           </li>
           <li class="pagination-item">
-            <a>2</a>
+            <a aria-label="2 страница списка">2</a>
           </li>
           <li class="pagination-item">
-            <a>3</a>
+            <a aria-label="3 страница списка">3</a>
           </li>
         </ul>
-        <button class="button-pagination" type="submit">СЛЕДУЮЩАЯ</button>
+        <button class="button-pagination" type="button" aria-label="Следующая страница списка">СЛЕДУЮЩАЯ</button>
       </section>
       <div class="map-two-page">
         <div class="map">
-          <img src="img/map.jpg" width="1440" height="415" alt="Карта">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!
+3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQ
+vtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!
+3m2!1sru!2sru!4v1615796703180!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen
+title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" loading="lazy"></iframe>
           <div class="tooltip-contacts-two-page">
             <div class="contacts">
               <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
               <p class="contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-              <a class="contacts-phone" href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
-              <button class="contacts-button button" type="submit">НАПИШИТЕ НАМ</button>
+              <a class="contacts-phone" href="tel:+78122757575" aria-label="Телефон студии"> тел. +7 (812) 275-75-75</a>
+              <button class="contacts-button button" type="submit" aria-label="">НАПИШИТЕ НАМ</button>
             </div>
           </div>
           <div class="map-marker"></div>
@@ -279,16 +283,16 @@
             <div class="modal-profile">
               <label class="modal-label">
              Ваше имя:
-                <input class="modal-field modal-name" type="text" name="uzer" placeholder="Имя Фамилия" minlength="4" maxlength="30">
+                <input class="modal-field modal-name" type="text" name="uzer" placeholder="Имя Фамилия" aria-label="Напишите имя и фамилию" minlength="4" maxlength="30">
               </label>
               <label class="modal-label">
              Ваш email:
-                <input class="modal-field" type="text" name="email" placeholder="email@example.com" pattern="[A-Za-z]{4,}@[A-Za-z]{4,}">
+                <input class="modal-field" type="text" name="email" placeholder="email@example.com" aria-label="Напишите email" pattern="[A-Za-z]{4,}@[A-Za-z]{4,}">
               </label>
             </div>
             <label class="modal-label">
              Текст письма:
-              <textarea class="modal-field modal-text" name="letter" placeholder="В свободной форме"></textarea>
+              <textarea class="modal-field modal-text" name="letter" placeholder="В свободной форме" aria-label="Напишите текст сообщения"></textarea>
             </label>
             <button class="modal-button button" type="submit">ОТПРАВИТЬ</button>
           </form>
@@ -302,11 +306,10 @@
     </main>
 
     <footer class="main-footer container">
-
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <div class="footer-social-list">
-          <a class="social-button">
+          <a class="social-button" aria-label="Логотип ВКонтакте">
             <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983
 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275
@@ -327,12 +330,12 @@
 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
             </svg>
           </a>
-          <a class="social-button">
+          <a class="social-button" aria-label="Логотип Facebook">
             <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
             </svg>
           </a>
-          <a class="social-button">
+          <a class="social-button" aria-label="Логотип Instagram">
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65
 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7
@@ -348,7 +351,6 @@
         </div>
       </section>
     </footer>
-    <script src="js/popup.js"></script>
+    <script src="js/js.script.mini.js"></script>
   </body>
 </html>
-

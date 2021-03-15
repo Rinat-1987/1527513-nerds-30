@@ -8,13 +8,13 @@
     <link rel="apple-touch-icon" href="img/fav180.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.mini.css">
   </head>
   <body class="page-body">
     <header class="main-header">
 
       <nav class="main-navigation container">
-        <a class="main-header-logo">
+        <a class="main-header-logo" aria-label="Логотип Нердс">
           <svg width="160" height="66" viewBox="0 0 160 66" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M48.031 24.783C51.682 28.757 59.647 25.158
 57.062 19.861C55.336 16.305 52.75 17.13 50.904 18.041C47.208 19.82 46.509 23.088 48.031 24.783ZM42.105
@@ -64,20 +64,20 @@
         </a>
         <ul class="main-wrapper">
           <li>
-            <a href="#">Студия</a>
+            <a href="#" aria-label="Пункт меню">Студия</a>
           </li>
           <li>
-            <a class="main-clients" href="#">Клиенты</a>
+            <a class="main-clients" href="#" aria-label="Пункт меню">Клиенты</a>
           </li>
           <li>
-            <a class="main-shop" href="catalog.html">Магазин</a>
+            <a class="main-shop" href="catalog.html" aria-label="Пункт меню">Магазин</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="#" aria-label="Пункт меню">Контакты</a>
           </li>
         </ul>
         <div class="basket">
-          <a class="basket-icon" href="#">Корзина</a>
+          <a class="basket-icon" href="#" aria-label="">Корзина</a>
         </div>
       </nav>
     </header>
@@ -90,17 +90,17 @@
             <li class="features-item slide-smartphones">
               <p class="features-subtitle">Долго, дорого, <br>скрупулезно.</p>
               <p class="features-text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-              <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              <a class="features-button button" href="#" aria-label="">УЗНАТЬ БОЛЬШЕ</a>
             </li>
             <li class="features-item slide-desktops slide-hidden">
               <p class="features-subtitle">Любим математику <br>как никто другой</p>
               <p class="features-text">Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
-              <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              <a class="features-button button" href="#" aria-label="">УЗНАТЬ БОЛЬШЕ</a>
             </li>
             <li class="features-item slide-gadgets slide-hidden">
               <p class="features-subtitle">Только ночь, <br>только хардкор</p>
               <p class="features-text">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
-              <a class="features-button button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              <a class="features-button button" href="#" aria-label="">УЗНАТЬ БОЛЬШЕ</a>
             </li>
           </ul>
           <div>
@@ -118,17 +118,17 @@
           <li class="services-item services-desktop">
             <h3 class="services-subject">ВЕБ-САЙТЫ</h3>
             <p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="services-button button" href="#">ЗАКАЗАТЬ</a>
+            <a class="services-button button" href="#" aria-label="">ЗАКАЗАТЬ</a>
           </li>
           <li class="services-item services-smartphones">
             <h3 class="services-subject">ПРИЛОЖЕНИЯ</h3>
             <p class="services-text">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
-            <a class="services-button button button-green" href="#">ЗАКАЗАТЬ</a>
+            <a class="services-button button button-green" href="#" aria-label="">ЗАКАЗАТЬ</a>
           </li>
           <li class="services-item services-poster">
             <h3 class="services-subject">ПРЕЗЕНТАЦИИ</h3>
             <p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="services-button button button-yellow" href="#">ЗАКАЗАТЬ</a>
+            <a class="services-button button button-yellow" href="#" aria-label="">ЗАКАЗАТЬ</a>
           </li>
         </ul>
       </section>
@@ -164,29 +164,33 @@
 
       <section class="companies container">
         <h2 class="visually-hidden">Шаблоны</h2>
-        <ul class="companies-list companies-border">
+        <ul class="companies-list">
           <li class="companies-item companies-html">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="200" height="75" alt="html academy"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт HTML Academy"><img src="img/logo-html.png" width="200" height="75" alt="html academy"></a>
           </li>
           <li class="companies-item companies-borodinski">
-            <a><img src="img/logo-borodinski.png" width="220" height="90" alt="borodinski"></a>
+            <a aria-label="Логотип barbershopa"><img src="img/logo-borodinski.png" width="220" height="90" alt="borodinski"></a>
           </li>
           <li class="companies-item companies-pink">
-            <a><img src="img/logo-pink.png" width="200" height="60" alt="pink"></a>
+            <a aria-label="Логотип Pink"><img src="img/logo-pink.png" width="200" height="60" alt="pink"></a>
           </li>
           <li class="companies-item companies-mishka">
-            <a><img src="img/logo-mishka.png" width="185" height="85" alt="mishka"></a>
+            <a aria-label="Логотип Mishka"><img src="img/logo-mishka.png" width="185" height="85" alt="mishka"></a>
           </li>
         </ul>
       </section>
 
       <div class="map">
-        <img src="img/map.jpg" width="1440" height="415" alt="Карта">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!
+3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQ
+vtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!
+3m2!1sru!2sru!4v1615796703180!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen
+title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" loading="lazy"></iframe>
         <div class="contacts">
           <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
           <p class="contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-          <a class="contacts-phone" href="tel:+78122757575"> тел. +7 (812) 275-75-75</a>
-          <button class="contacts-button button" type="submit">НАПИШИТЕ НАМ</button>
+          <a class="contacts-phone" href="tel:+78122757575" aria-label="Телефон студии"> тел. +7 (812) 275-75-75</a>
+          <button class="contacts-button button" type="submit" aria-label="">НАПИШИТЕ НАМ</button>
         </div>
         <div class="map-marker"></div>
       </div>
@@ -198,16 +202,16 @@
             <div class="modal-profile">
               <label class="modal-label">
              Ваше имя:
-                <input class="modal-field modal-name" type="text" name="uzer" placeholder="Имя Фамилия" minlength="4" maxlength="30">
+                <input class="modal-field modal-name" type="text" name="uzer" placeholder="Имя Фамилия" aria-label="Напишите имя и фамилию" minlength="4" maxlength="30">
               </label>
               <label class="modal-label">
              Ваш email:
-                <input class="modal-field" type="text" name="email" placeholder="email@example.com" pattern="[A-Za-z]{4,}@[A-Za-z]{4,}">
+                <input class="modal-field" type="text" name="email" placeholder="email@example.com" aria-label="Напишите email" pattern="[A-Za-z]{4,}@[A-Za-z]{4,}">
               </label>
             </div>
             <label class="modal-label">
              Текст письма:
-              <textarea class="modal-field modal-text" name="letter" placeholder="В свободной форме"></textarea>
+              <textarea class="modal-field modal-text" name="letter" placeholder="В свободной форме" aria-label="Напишите текст сообщения"></textarea>
             </label>
             <button class="modal-button button" type="submit">ОТПРАВИТЬ</button>
           </form>
@@ -224,7 +228,7 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Соцсети</h2>
         <div class="footer-social-list">
-          <a class="social-button">
+          <a class="social-button" aria-label="Логотип ВКонтакте">
             <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983
 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275
@@ -245,12 +249,12 @@
 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
             </svg>
           </a>
-          <a class="social-button">
+          <a class="social-button" aria-label="Логотип Facebook">
             <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
             </svg>
           </a>
-          <a class="social-button">
+          <a class="social-button" aria-label="Логотип Instagram">
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65
 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7
@@ -266,6 +270,6 @@
         </div>
       </section>
     </footer>
-    <script src="js/popup.js"></script>
+    <script src="js/js.script.mini.js"></script>
   </body>
 </html>
