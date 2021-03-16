@@ -14,7 +14,7 @@
 	--basic-grey-gradient: #E1E1E1;
 	--basic-grey-range: #D7DCDF;
 	--basic-toggle: #ABABAB;
-	--basic-checked: rgba(77, 77, 77, 0.4);
+	--basic-checked: rgba(236, 88, 88, 0.4);
 	--basic-checked-hover: rgba(77, 77, 77, 1);
 	--basic-del: rgba(68, 68, 68, 1);
 	--basic-radio: #4D4D4D;
@@ -26,6 +26,7 @@
 	--basic-shadow: rgba(0, 0, 0, 0.25);
 	--basic-pagination: rgba(0, 1, 1, 0.1);
 	--basic-modal: rgba(0, 0, 0, 0.4);
+
 	--special-1: #FB565A;
 	--special-2: #E74246;
 	--special-3: #00CA74;
@@ -729,7 +730,6 @@ img {
 	position: absolute;
 	top: 212px;
 	left: 50px;
-	width: 219px;
 	padding: 17px 44px 15px;
 }
 
