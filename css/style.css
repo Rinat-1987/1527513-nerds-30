@@ -629,6 +629,12 @@ img {
 	background: var(--basic-pale-grey);
 }
 
+.companies-list li:nth-child(2)::after {
+  position: absolute;
+	top: 63px;
+  left: 526px;
+}
+
 .companies-list li:last-child::after {
 	display: none;
 }
@@ -672,27 +678,27 @@ img {
 }
 
 .map {
-	position: relative;
-	z-index: 2;
-	width: 1440px;
+  z-index: 2;
+	min-width: 1160px;
 	height: 416px;
 	padding: 0;
-	margin: 0 auto;
+  text-align: center;
+  object-fit: contain;
 	background: var(--basic-pale-grey);
 }
 
 .map iframe {
-	width: 1440px;
-	height: 416px;
+  width: 100%;
 }
 
 .contacts {
-	position: absolute;
+	position: relative;
 	z-index: 3;
-	top: 51px;
-	left: 142px;
+	bottom: 370px;
+	right: 420px;
 	width: 319px;
 	height: 308px;
+  margin: 0 auto;
 	padding: 49px 50px 47px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -735,8 +741,8 @@ img {
 
 .map-marker {
 	position: absolute;
-	top: 83px;
-	left: 823px;
+	bottom: 86px;
+	left: 682px;
 	z-index: 3;
 	width: 231px;
 	height: 190px;
@@ -1683,13 +1689,17 @@ img {
 }
 
 .map-two-page {
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-right: 5px;
 }
 
 .tooltip-contacts-two-page {
-	margin-top: -5px;
+	margin-top: 5px;
 	margin-left: 5px;
+}
+
+.footer-two-page {
+  margin-top: 5px;
 }
 
 .controls {
