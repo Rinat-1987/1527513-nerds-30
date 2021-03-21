@@ -26,7 +26,6 @@
 	--basic-shadow: rgba(0, 0, 0, 0.25);
 	--basic-pagination: rgba(0, 1, 1, 0.1);
 	--basic-modal: rgba(0, 0, 0, 0.4);
-
 	--special-1: #FB565A;
 	--special-2: #E74246;
 	--special-3: #00CA74;
@@ -380,10 +379,8 @@ img {
 }
 
 .services-item {
-  display: flex;
-  flex-wrap: wrap;
 	width: 300px;
-	min-height: 148px;
+	height: 148px;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -632,9 +629,9 @@ img {
 }
 
 .companies-list li:nth-child(2)::after {
-  position: absolute;
+	position: absolute;
 	top: 63px;
-  left: 526px;
+	left: 526px;
 }
 
 .companies-list li:last-child::after {
@@ -680,17 +677,18 @@ img {
 }
 
 .map {
-  z-index: 2;
+	z-index: 2;
 	min-width: 1160px;
 	height: 416px;
 	padding: 0;
-  text-align: center;
-  object-fit: contain;
+	text-align: center;
+	-o-object-fit: contain;
+	   object-fit: contain;
 	background: var(--basic-pale-grey);
 }
 
 .map iframe {
-  width: 100%;
+	width: 100%;
 }
 
 .contacts {
@@ -700,7 +698,7 @@ img {
 	right: 420px;
 	width: 319px;
 	height: 308px;
-  margin: 0 auto;
+	margin: 0 auto;
 	padding: 49px 50px 47px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -769,6 +767,13 @@ img {
 	background-color: var(--basic-white);
 	-webkit-box-shadow: 0px 20px 40px var(--basic-modal);
 	box-shadow: 0px 20px 40px var(--basic-modal);
+}
+
+.modal-show {
+	-webkit-animation-name: bonus;
+	        animation-name: bonus;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
 }
 
 .modal-title {
@@ -903,7 +908,8 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -1222,7 +1228,7 @@ img {
 .filter-input-radio-on + label::before {
 	content: "";
 	position: absolute;
-	left: 13px;
+	left: 15px;
 	width: 25px;
 	height: 25px;
 	background-image: url(../img/radio-on.svg);
@@ -1236,7 +1242,7 @@ img {
 .filter-input-radio-off + label::before {
 	content: "";
 	position: absolute;
-	left: 13px;
+	left: 15px;
 	width: 25px;
 	height: 25px;
 	background-image: url(../img/radio-off.svg);
@@ -1699,4 +1705,26 @@ img {
 .scale {
 	height: 2px;
 	color: var(--special-6);
+}
+
+@-webkit-keyframes bonus {
+	0% {
+		-webkit-transform: translateY(-2000px);
+		        transform: translateY(-2000px);
+	}
+
+	70% {
+		-webkit-transform: translateY(30px);
+		        transform: translateY(30px);
+	}
+
+	90% {
+		-webkit-transform: translateY(-10px);
+		        transform: translateY(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
 }
